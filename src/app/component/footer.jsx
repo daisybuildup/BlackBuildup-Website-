@@ -49,7 +49,7 @@ const footer = () => {
             <p className='pt-4'>Get updates on new programs success stories, and opportunities to make an impact</p>
             <form className='pt-4 flex relative'>
             <input type='email' placeholder='Enter your email' className='pl-2 pr-5 py-2.5 border-l border-y border-[#D1D5DB] rounded-l-lg ' />
-            <button type='submit' className='text-white bg-[#AD8E63] py-2.5 px-3.5 rounded-r-lg  '>Subscribe</button>
+            <button type='submit' className='text-white bg-[#AD8E63] py-2.5 md:px-3.5 px-1.5 text-sm rounded-r-lg  '>Subscribe</button>
             </form>
            
                     </div>
