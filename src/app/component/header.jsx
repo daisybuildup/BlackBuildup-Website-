@@ -21,7 +21,7 @@ const header = () => {
         { name: 'Contact', href: '/contact' },
     ];
   return (
-    <header className="font-mont fixed z-1000 bg-[#F5F5F5] w-[100vw] mx-auto text-[#3360A0] flex py-5 justify-between items-center xl:px-15 px-5 ">
+    <header className="font-mont fixed z-1000 bg-[#F5F5F5] max-w-380 w-[100vw] mx-auto text-[#3360A0] flex py-5 justify-between items-center xl:px-15 px-5 ">
       <Link href='/'><Image src='/cclclogo.svg' alt='CCLC Logo' width={160} height={64} className='md:w-[160px] md:h-[60px] w-[120px] h-[50px]'/></Link>
       <nav className='lg:block hidden'>
         <ul className='flex gap-10 text-lg font-medium'>

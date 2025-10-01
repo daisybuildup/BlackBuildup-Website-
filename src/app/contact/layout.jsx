@@ -3,13 +3,13 @@ import Header from '../component/header'
 import Footer from '../component/footer'
 
 export const metadata = {
-  title: "CCLC | Contact",
+  title: "Contact | CCLC",
   description: "CCLC contact page",
 };
 
 const layout = ({children}) => {
   return (
-    <div className='font-mont max-w-380 w-full min-h-screen'>
+    <div className=' max-w-380 mx-auto min-h-screen'>
         <Header/>
      {children}
      <Footer/>

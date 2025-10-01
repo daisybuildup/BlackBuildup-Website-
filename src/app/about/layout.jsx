@@ -9,7 +9,7 @@ export const metadata = {
 
 const layout = ({children}) => {
   return (
-    <div className='font-mont max-w-380 w-full min-h-screen'>
+    <div className=' max-w-380  mx-auto min-h-screen'>
         <Header/>
      {children}
      <Footer/>

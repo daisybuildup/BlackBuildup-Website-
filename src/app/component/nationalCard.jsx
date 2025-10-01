@@ -30,7 +30,8 @@ const NationalCard = () => {
   ];
 
   return (
-    <div className="grid font-mont gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 mt-8">
+    <div
+      className="grid font-mont gap-6  px-6 lg:px-14 xl:px-21 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-8" >
       {cards.map((card, index) => {
         const { ref, inView } = useInView({
           triggerOnce: true,
@@ -41,10 +42,16 @@ const NationalCard = () => {
           <div
             ref={ref}
             key={index}
-            className="flex flex-col justify-center w-[330px] h-auto py-8 px-10 bg-white shadow-lg rounded-[16px] items-center"
+            className="
+              flex flex-col justify-center 
+              h-auto py-8 px-10 
+              bg-white shadow-lg 
+              rounded-[16px] items-center
+            "
           >
-             <h1 className="text-[40px] text-center mt-3 font-bold text-[#AD8E63]">
-              {card.prefix}{inView ? <CountUp end={card.value} duration={2.5} /> : 0}
+            <h1 className="text-[40px] text-center mt-3 font-bold text-[#AD8E63]">
+              {card.prefix}
+              {inView ? <CountUp end={card.value} duration={2.5} /> : 0}
               {card.suffix}
             </h1>
             <p className="text-center text-black text-[16px]">{card.text}</p>

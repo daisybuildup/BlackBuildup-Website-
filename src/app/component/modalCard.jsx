@@ -3,7 +3,7 @@ import React from "react";
 const ModalCard = ({ modal, setIsOpenProp }) => {
   return (
     <div
-      className="fixed font-mont inset-0 w-full h-full bg-black/70 flex justify-center items-center z-[1000] px-6"
+      className="fixed  inset-0 w-full h-full bg-black/70 flex justify-center items-center z-[1000] px-6"
       onClick={() => setIsOpenProp(false)} // click background to close
     >
       {/* Modal content */}
