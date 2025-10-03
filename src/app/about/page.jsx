@@ -2,11 +2,12 @@
 
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
-
+import Image from 'next/image'
 const Page = () => {
 
   
   return (
+    <>
    <div className="relative md:h-[70vh] h-[60vh] bg-[url('/about.jpg')] bg-cover bg-center">
     {/* Overlay */}
     <div className="absolute inset-0 bg-[#0F4082]/50"></div>
@@ -24,6 +25,24 @@ const Page = () => {
       /></p>
     </div>
   </div>
+  <div className="flex justify-center md:flex-row flex-col items-center gap-6 py-18 px-6 md:px-16 bg-[#F5F6FA]">
+    <div className='max-w-[650px] py-8 px-6 flex flex-col gap-6 bg-white text-[#4B5564] rounded-xl'>
+      <div className='flex justify-start items-center gap-7 ' >
+        <Image src='/lampon.svg' width={64} height={64} alt='dartboard.svg'/>
+        <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[25px]'>Our Mission</h1>
+      </div>
+      <p className='md:w-[95%] w-full'>Empower Canadian youth through innovative programs, meaningful mentorship, and sustainable career pathways that build stronger communities nationwide.</p>
+    </div>
+
+ <div className='max-w-[650px] py-8 px-6 flex flex-col gap-6 bg-white text-[#4B5564] rounded-xl'>
+      <div className='flex justify-start items-center gap-7 ' >
+        <Image src='/dartboard.svg' width={64} height={64} alt='dartboard.svg'/>
+        <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[25px]'>Our Vision</h1>
+      </div>
+      <p className='md:w-[95%] w-full'>In Canada where every young person has access to transformative opportunities, creating a generation of empowered leaders driving positive change.</p>
+    </div>
+  </div>
+  </>
   )
 }
 
