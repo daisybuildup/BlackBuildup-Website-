@@ -35,7 +35,7 @@ const PModalCard = ({ modal, setIsOpenProp }) => {
           </div>
         </div>
 
-        <div className="mt-12 py-8 px-6 bg-[#eceffb] rounded-[12px]">
+        <div className="mt-12 py-8 px-6 bg-[#f2f2f2] rounded-[12px]">
           <h1 className="text-[#0F4082] text-[20px] font-bold">Next</h1>
           <p>{modal.admission}</p>
           <button className="px-3.5 py-3 bg-[#AD8E63] text-white rounded-2xl mt-5">Apply Now</button>

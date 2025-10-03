@@ -3,7 +3,7 @@ import Header from '../component/header'
 import Footer from '../component/footer'
 
 export const metadata = {
-  title: "CCLC | About",
+  title: "About | CCLC",
   description: "CCLC about page",
 };
 

@@ -29,7 +29,7 @@ const ModalCard = ({ modal, setIsOpenProp }) => {
           <li>{modal.listfour}</li>
         </ul>
 
-        <div className="mt-8 sm:mt-12 py-6 px-4 sm:py-8 sm:px-6 bg-[#eceffb] rounded-[12px]">
+        <div className="mt-8 sm:mt-12 py-6 px-4 sm:py-8 sm:px-6 bg-[#f2f2f2] rounded-[12px]">
           <h1 className="text-[#0F4082] text-[16px] sm:text-[18px] md:text-[20px] font-bold">
             {modal.titlethree}
           </h1>
