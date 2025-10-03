@@ -1,16 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-
+import  {Reviews}  from '../../../data/review'
 const Review = () => {
-  const Reviews = [
-    { img: '/sarah.png', name: 'Sarah Chen', role: 'Community Organiser', comment: 'This program transformed how I approach leadership. The skills I gained have helped me build stronger partnerships and create real change in my neighborhood.', },
-    { img: '/marcus.png', name: 'Marcus Johnson', role: 'Youth Program Director', comment: 'This program transformed how I approach leadership. The skills I gained have helped me build stronger partnerships and create real change in my neighborhood.', },
-    { img: '/elena.png', name: 'Elena Rodriguez', role: 'Small Business Owner', comment: 'Through this program, I learned to see my business as a community asset. We’ve since created jobs and partnerships that strengthen our entire distinct.', },
-    { img: '/elena.png', name: 'Elena Rodriguez', role: 'Small Business Owner', comment: 'Through this program, I learned to see my business as a community asset. We’ve since created jobs and partnerships that strengthen our entire distinct.', },
-    { img: '/elena.png', name: 'Elena Rodriguez', role: 'Small Business Owner', comment: 'Through this program, I learned to see my business as a community asset. We’ve since created jobs and partnerships that strengthen our entire distinct.', }
-  ]
-
-  return (
+    return (
     <div className='relative w-auto mt-[60px] grid gap-5 px-4 justify-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3'>
       {Reviews.slice(0, 3).map((review, index) => (
         <div key={index} className='w-auto relative flex justify-center items-center h-[430px]'>

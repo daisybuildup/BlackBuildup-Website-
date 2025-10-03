@@ -4,6 +4,7 @@ import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import Image from 'next/image'
 import AchievementCard from '../component/achievement'
+import  Review  from '../component/review'
 const Page = () => {
 
   const collaborators =[
@@ -132,7 +133,7 @@ const Page = () => {
    <section className='bg-white w-full flex flex-col justify-center items-center py-18  px-5 md:px-16'>
     <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Stories & Testimonials</h1>
     <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>Ready to make a difference? Explore career opportunities and become part of a team dedicated to empowering youth and transforming communities.</p>
-    
+    <Review />
    </section>
   </>
   )
