@@ -42,6 +42,10 @@ const Page = () => {
       <p className='md:w-[95%] w-full'>In Canada where every young person has access to transformative opportunities, creating a generation of empowered leaders driving positive change.</p>
     </div>
   </div>
+  <div className='bg-white w-full flex flex-col justify-center items-center py-10 px-5 md:px-16'>
+<h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[30px]'>Our Journey</h1>
+<Image alt='journey' src='/journey.svg' width={1100} height={400} className=' w-100% h-auto mt-9'/>
+  </div>
   </>
   )
 }
