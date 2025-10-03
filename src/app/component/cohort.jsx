@@ -24,8 +24,8 @@ const Cohort = ({setIsOpenProp,involve}) => {
         <p className="pt-4 sm:pt-6 text-sm text-left w-[80%] sm:text-base">{involve.text}</p>
               <form className="space-y-4">
           
-     <div className='flex justify-center mt-6 items-center gap-6'>
-          <div className=' w-[50%]'>
+     <div className='flex flex-col md:flex-row justify-center mt-6 items-center gap-6'>
+          <div className=' md:w-[50%] w-full'>
             <label htmlFor='firstname' className="block mb-1 text-left font-medium">First Name*</label>
             <input
               type="text"
@@ -36,7 +36,7 @@ const Cohort = ({setIsOpenProp,involve}) => {
             />
           </div>
 
-          <div className=' w-[50%]'>
+          <div className=' md:w-[50%] w-full'>
             <label htmlFor='lastName' className="block mb-1 text-left font-medium">Last Name*</label>
             <input
               type="text"
