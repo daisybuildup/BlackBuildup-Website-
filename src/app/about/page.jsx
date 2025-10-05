@@ -5,6 +5,10 @@ import { Typewriter } from 'react-simple-typewriter'
 import Image from 'next/image'
 import AchievementCard from '../component/achievement'
 import  Review  from '../component/review'
+//import Lteadership from '../../../data/leadership'
+import Leadership from '../component/leadership'
+
+
 const Page = () => {
 
   const collaborators =[
@@ -65,6 +69,7 @@ const Page = () => {
 <section className='bg-[#E6E6E6]/25 w-full flex flex-col justify-center items-center py-10  px-5 md:px-16'>
    <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Leadership Team</h1>
    <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>Meet the passionate leaders driving our mission forward with decades of combined experience in social impact and community building.</p>
+   <Leadership />
 </section>
 
 <section className='bg-[#F5F6FA] w-full flex flex-col justify-center items-center py-10  px-5 md:px-16'>
@@ -130,10 +135,18 @@ const Page = () => {
 <button className='py-3 px-3.5 bg-[#0F4082] rounded-xl font-medium mt-6'>Become a Partner</button>
   </section>
 
-   <section className='bg-white w-full flex flex-col justify-center items-center py-18  px-5 md:px-16'>
+   <section className='bg-white w-full flex flex-col justify-center items-center pt-18 pb-13  px-5 md:px-16'>
     <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Stories & Testimonials</h1>
     <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>Ready to make a difference? Explore career opportunities and become part of a team dedicated to empowering youth and transforming communities.</p>
     <Review />
+   </section>
+   <section className='bg-[#0F4082] w-full flex flex-col justify-center items-center py-18  px-5 md:px-16'>
+      <p className='xl:max-w-[40%] pt-4 text-white text-center'>Join us in empowering the next generation of Canadian leaders.
+Together, we can build stronger communities nationwide.</p>
+<div className='flex justify-center md:flex-row flex-col items-center gap-6 mt-8'>
+      <button className='py-3 px-16 bg-[#AD8E63] rounded-xl font-medium  cursor-pointer text-white'>Get Involved</button>
+      <button className='py-3 px-16 border bg-[#E5E7EBF6] rounded-xl font-medium  cursor-pointer text-[#0F4082]'>Learn More</button>
+      </div>
    </section>
   </>
   )
