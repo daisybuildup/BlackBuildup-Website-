@@ -26,10 +26,10 @@ const Leadership = () => {
                     </div>
                     <div className='flex flex-col justify-center items-center'>
                       <div className='flex gap-2  justify-center items-center  pt-6'>
-                  <h1 className='text-black font-bold text-[24px]'>{leader.name}</h1>
+                  <h1 className='text-black font-bold  text-[18px] sm:text-[20px] md:text-[24px]'>{leader.name}</h1>
              <Link href={leader.linkedin} target='_blank' rel='noopener noreferrer'><Image src='/linkedinbl.svg' width={24} height={24} alt='linkedin'/></Link>
                   </div>
-                    <h2 className='bg-[#AD8E63] rounded-2xl font-medium text-[14px] py-4 text-white mt-3 px-1.5'>{leader.role}</h2>
+                    <h2 className='bg-[#AD8E63] rounded-2xl font-medium text-[14px] py-2.5 text-white mt-3 px-1.5'>{leader.role}</h2>
                     <p className='text-[#4B5564] pt-6 text-[16px]'>{leader.about}</p>
                     </div>
                     <button className='text-[#0F4082] font-semibold text-[16px] py-3 mt-[64px] rounded-[16px] border text-center border-[#0F4082] cursor-pointer hover:bg-[#0F4082] hover:text-white w-full ' onClick={()=>setSelectedCard(leader)}>Learn More</button>
