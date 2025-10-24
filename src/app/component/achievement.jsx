@@ -15,7 +15,7 @@ const AchievementCard = () => {
       text: "Communities Served",
     },
     {
-        img: '/user.svg',    
+        img: '/puser.svg',    
         value: 12550,
       suffix: "+",
       subtext:'Year-over-year increase',

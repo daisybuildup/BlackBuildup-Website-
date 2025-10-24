@@ -3,6 +3,37 @@ import React from 'react'
 import { useState } from 'react';
 
 const Cohort = ({setIsOpenProp,involve}) => {
+
+  const [showToast, setShowToast] = useState(false);
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      
+      const formData = new FormData(e.target);
+      const firstname = formData.get("firstname");
+       const lastname = formData.get("lastname");
+      const email = formData.get("email");
+      const phone = formData.get("phone");
+      const program = formData.get("program")
+      const message = formData.get("message");
+  
+      //  Encode data for mailto link
+      const subject = encodeURIComponent("New Inquiry from Website");
+      const body = encodeURIComponent(
+        `\nFirstname: ${firstname}\nLastname: ${lastname}\nEmail: ${email}\nPhone: ${phone}\nProgram: ${program}\nMessage: ${message}\n\n from CCLC website`
+      );
+  
+      // ailto link (opens Gmail or default email app)
+      window.location.href = `mailto:victoradesola8@gmail.com?subject=${subject}&body=${body}`;
+    
+  
+      // Show a quick toast popup
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 4000);
+     e.target.reset();
+    };
+  
    
   return (
     
@@ -22,7 +53,7 @@ const Cohort = ({setIsOpenProp,involve}) => {
           {involve.header}
         </h1>
         <p className="pt-4 sm:pt-6 text-sm text-left w-[80%] sm:text-base">{involve.text}</p>
-              <form className="space-y-4">
+              <form className="space-y-4"   onSubmit={handleSubmit}>
           
      <div className='flex flex-col md:flex-row justify-center mt-6 items-center gap-6'>
           <div className=' md:w-[50%] w-full'>
@@ -95,16 +126,25 @@ const Cohort = ({setIsOpenProp,involve}) => {
               className="w-full border border-[#D9D9D9] rounded-lg p-3"
             ></textarea>
           </div>
+                
+               {/*  Toast notification */}
+            {showToast && (
+        <div className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-5 py-3 rounded-lg shadow-lg text-sm z-[1100]">
+            Email draft opened successfully
+              </div>
+          )}
+
               <div className='flex gap-6'>
           <button
             type="submit"
             className="w-[80%] bg-[#0F4082] text-white py-3 rounded-2xl hover:bg-[#1051a6] cursor-pointer transition"
+          
           >
             Submit
           </button>
           <button type='button' className='border border-[#0F4082] text-[#0F4082] rounded-2xl p-3 flex-1 cursor-pointer  font-medium' onClick={()=>setIsOpenProp(false)}>Cancel</button>
           </div>
-
+          
         </form>
   
       </div>

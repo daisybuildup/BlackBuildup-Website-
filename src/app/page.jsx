@@ -1,5 +1,5 @@
 'use client'
-
+import Link from "next/link"
 import Image from "next/image";
 import Header from "./component/header";
 import React from "react";
@@ -8,7 +8,7 @@ import { useState } from "react";
 import ModalCard from "./component/modalCard";
 import PillarCard from "./component/pillarCard";
 import Footer from "./component/footer";
-import Review from "./component/review";
+//import Review from "./component/review";
 import NationalCard from "./component/nationalCard";
 import TransformativeProgram from "./component/tProgram";
 import Cohort from "./component/cohort";
@@ -45,7 +45,7 @@ const impacts = [
 
              }
              /> }
-      <button  className='text-[#0F4082] border-[#0F4082] border cursor-pointer hover:bg-[#0f4082] hover:text-white  py-3 px-10 font-medium rounded-[14px]'>Explore Programs</button>
+      <Link href='/program'><button  className='text-[#0F4082] border-[#0F4082] border cursor-pointer hover:bg-[#0f4082] hover:text-white  py-3 px-10 font-medium rounded-[14px]'>Explore Programs</button></Link>
       </div>
       </div>
       <div className='w-auto flex justify-center items-center'>
@@ -151,7 +151,7 @@ const impacts = [
         <h2 className='text-[#0F4082] bg-[#edf0fc] rounded-full shadow-sm py-2.5 px-2.5 font-medium md:text-[20px]'>Our Mission</h2>
         <h1 className='md:text-[40px] text-[30px] text-[#0F4082] text-center font-bold pt-6 pb-4'>Voices of Change</h1>
         <p className='text-[#4B5564] text-center text-[18px]'>Hear from the leaders who are making a difference in their communities every day.</p>
-        <Review/>
+        {/*<Review/>*/}
         <div className=' xl:w-[60%] w-[95%] bg-[#0F4082] text-center flex justify-center items-center rounded-xl mt-[48px] flex-col py-8 px-[52px] gap-[24px] h-auto'>
           <h1 className='md:text-[40px] text-white text-[30px] font-bold'>Ready to Add Your Voice?</h1>
           <h2 className='text-white/70'>Join our community of changemakers and start making the impact you’ve always envisioned</h2>

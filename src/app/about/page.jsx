@@ -1,15 +1,14 @@
-'use client'
 
 import React from 'react'
-import { Typewriter } from 'react-simple-typewriter'
 import Image from 'next/image'
 import AchievementCard from '../component/achievement'
+import Leadership from '../component/Leadership'
+import TypewriterText from '../component/TypewriterText'
 import  Review  from '../component/review'
-//import Lteadership from '../../../data/leadership'
-import Leadership from '../component/leadership'
 
 
 const Page = () => {
+   
 
   const collaborators =[
     {svg:'/teacher.svg', text:'Universities', subtext:'Academic partnerships for research and development'},
@@ -37,14 +36,7 @@ const Page = () => {
     {/* Content */}
     <div className="relative flex flex-col text-center px-5 items-center justify-center h-full">
       <h1 className="text-white md:text-4xl text-[30px] font-bold">About Us</h1>
-      <p className='text-white md:text-[18px]'><Typewriter
-        words={['Discover our mission, vision, impact, and leadship']}
-        loop={1} // only once
-        cursor={false} // no blinking cursor
-        typeSpeed={40}
-        deleteSpeed={0}
-        delaySpeed={1000}
-      /></p>
+       <TypewriterText text={["Discover our mission, vision, impact, and leadship"]}/>
     </div>
   </div>
   <section className="flex justify-center md:flex-row flex-col items-center gap-6 py-18 px-6 md:px-16 bg-[#F5F6FA]">
@@ -69,13 +61,13 @@ const Page = () => {
 <section className='bg-[#E6E6E6]/25 w-full flex flex-col justify-center items-center py-10  px-5 md:px-16'>
    <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Leadership Team</h1>
    <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>Meet the passionate leaders driving our mission forward with decades of combined experience in social impact and community building.</p>
-   <Leadership />
+<Leadership/>
 </section>
 
 <section className='bg-[#F5F6FA] w-full flex flex-col justify-center items-center py-10  px-5 md:px-16'>
     <h1 className='text-[#0F4082] font-bold text-center lg:text-[40px] text-[30px]'>Our Impact & Achievements</h1>
        <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>These number tell the story of our commitment to creating meaningful change and empowering communities.</p>
-       <AchievementCard />
+       <AchievementCard/>
 </section>
 
   <section className='bg-white w-full flex flex-col justify-center items-center py-10 px-5 md:px-16'>

@@ -3,9 +3,12 @@ import React from 'react'
 import Link from 'next/link'
 import { FaTimes } from "react-icons/fa";
 import Image from 'next/image'
+import { useState } from 'react';
 import {links} from '../../../data/socialLinks'
+import Sign from "../component/Sign";
 
 const NavBar = ({handleToggleOff}) => {
+const [isSignOpen, setIsSignOpen] = useState(false);
   
   return (
     <div className="fixed flex inset-0 z-[1000] min-h-screen ">
@@ -24,7 +27,7 @@ const NavBar = ({handleToggleOff}) => {
           <Link href="/program" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Programs</Link>
           <Link href="/advocacy" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Advocacy</Link>
           <Link href="/contact" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Contact</Link>
-          <Link href="/" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Get Involved</Link>
+          <p  className="text-white text-[18px] font-semibold" onClick={() => setIsSignOpen(true)}>Sign In</p>
           <Link href="/" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Donate</Link>
         </div>
 
@@ -42,7 +45,7 @@ const NavBar = ({handleToggleOff}) => {
       </div>
        {/* Dark overlay */}
       <div onClick={handleToggleOff} className="bg-black/50 flex-1"></div>
-
+{isSignOpen && <Sign setIsOpenProp={setIsSignOpen} />}
     </div>
   )
 }
