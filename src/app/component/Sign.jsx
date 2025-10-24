@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+//for the reuseable signin/up modal
 const Sign = ({ setIsOpenProp }) => {
   const [mode, setMode] = useState("signin");
 
