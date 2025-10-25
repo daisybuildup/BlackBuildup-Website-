@@ -9,7 +9,7 @@ import  Review  from '../component/review'
 
 const Page = () => {
    
-
+//for the existing collaborators
   const collaborators =[
     {svg:'/teacher.svg', text:'Universities', subtext:'Academic partnerships for research and development'},
     {svg:'/home.svg', text:'Universities', subtext:'Private sector collaboration and fund support'},
