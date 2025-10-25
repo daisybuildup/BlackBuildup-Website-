@@ -1,15 +1,15 @@
 
 import React from 'react'
 import Image from 'next/image'
-import AchievementCard from '../component/Achievement.jsx'
-import Leadership from '../component/Leadership.jsx'
+import AchievementCard from '../component/Achievement'
+import Leadership from '../component/Leadership'
 import TypewriterText from '../component/TypewriterText'
 import  Review  from '../component/review'
 
 
 const Page = () => {
    
-//for the existing collaborators
+//for the  collaborators
   const collaborators =[
     {svg:'/teacher.svg', text:'Universities', subtext:'Academic partnerships for research and development'},
     {svg:'/home.svg', text:'Universities', subtext:'Private sector collaboration and fund support'},
