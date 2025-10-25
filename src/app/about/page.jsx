@@ -123,7 +123,7 @@ const Page = () => {
     </div>
   ))}
 </div>
-<p className='text-[#4B5564] pt-12'>Interested in partnering with us? Let’s create impact together.</p>
+<p className='text-[#4B5564] pt-12 text-center'>Interested in partnering with us? Let’s create impact together.</p>
 <button className='py-3 px-3.5 bg-[#0F4082] rounded-xl font-medium mt-6'>Become a Partner</button>
   </section>
 

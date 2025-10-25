@@ -30,7 +30,7 @@ export default function LeadershipClient({ teams }) {
 
           <div className="flex flex-col justify-center items-center">
             <div className="flex gap-2 justify-center items-center pt-6">
-              <h1 className="text-black font-bold text-[20px]">{leader.name}</h1>
+              <h1 className="text-black font-bold md:text-[20px] text-[16px] ">{leader.name}</h1>
               {leader.linkedin && (
                 <Link href={leader.linkedin} target="_blank">
                   <Image src="/linkedinbl.svg" width={24} height={24} alt="linkedin" />
