@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
-const AchievementCard = () => {
+const Achievement = () => {
   const cards = [
     {
         img: '/trendup.svg',    
@@ -73,4 +73,4 @@ const AchievementCard = () => {
   );
 };
 
-export default AchievementCard;
+export default Achievement;
