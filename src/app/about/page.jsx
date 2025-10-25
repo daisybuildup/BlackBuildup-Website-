@@ -1,10 +1,10 @@
 
 import React from 'react'
 import Image from 'next/image'
-import AchievementCard from '../component/Achievement'
-import Leadership from '../component/Leadership'
-import TypewriterText from '../component/TypewriterText'
-import  Review  from '../component/review'
+import Achievement from '../components/Achievement'
+import Leadership from '../components/Leadership'
+import TypewriterText from '../components/TypewriterText'
+import  Review  from '../components/review'
 
 
 const Page = () => {
@@ -67,7 +67,7 @@ const Page = () => {
 <section className='bg-[#F5F6FA] w-full flex flex-col justify-center items-center py-10  px-5 md:px-16'>
     <h1 className='text-[#0F4082] font-bold text-center lg:text-[40px] text-[30px]'>Our Impact & Achievements</h1>
        <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>These number tell the story of our commitment to creating meaningful change and empowering communities.</p>
-       <AchievementCard/>
+       <Achievement/>
 </section>
 
   <section className='bg-white w-full flex flex-col justify-center items-center py-10 px-5 md:px-16'>

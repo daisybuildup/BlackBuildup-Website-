@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Email from "../component/email"
+import Email from "./email"
 
 import {links} from '../../../data/socialLinks'
 

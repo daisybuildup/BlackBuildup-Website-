@@ -1,17 +1,17 @@
 'use client'
 import Link from "next/link"
 import Image from "next/image";
-import Header from "./component/header";
+import Header from "./components/header";
 import React from "react";
-import ProgramCard from "./component/programCard";
+import ProgramCard from "./components/programCard";
 import { useState } from "react";
-import ModalCard from "./component/modalCard";
-import PillarCard from "./component/pillarCard";
-import Footer from "./component/footer";
+import ModalCard from "./components/modalCard";
+import PillarCard from "./components/pillarCard";
+import Footer from "./components/footer";
 //import Review from "./component/review";
-import NationalCard from "./component/nationalCard";
-import TransformativeProgram from "./component/tProgram";
-import Cohort from "./component/cohort";
+import NationalCard from "./components/nationalCard";
+import TransformativeProgram from "./components/tProgram";
+import Cohort from "./components/cohort";
 
 export default function Home() {
 const [isOpen, setIsOpen] = useState(false);

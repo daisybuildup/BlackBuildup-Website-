@@ -5,7 +5,7 @@ import { FaTimes } from "react-icons/fa";
 import Image from 'next/image'
 import { useState } from 'react';
 import {links} from '../../../data/socialLinks'
-import Sign from "../component/Sign";
+import Sign from "./Sign";
 
 const NavBar = ({handleToggleOff}) => {
 const [isSignOpen, setIsSignOpen] = useState(false);
