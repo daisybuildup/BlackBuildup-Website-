@@ -1,8 +1,8 @@
 
 import React from 'react'
 import Image from 'next/image'
-import AchievementCard from '../component/Achievement'
-import Leadership from '../component/Leadership'
+import AchievementCard from '../component/Achievement.jsx'
+import Leadership from '../component/Leadership.jsx'
 import TypewriterText from '../component/TypewriterText'
 import  Review  from '../component/review'
 
