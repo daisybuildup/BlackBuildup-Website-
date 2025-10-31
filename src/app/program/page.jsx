@@ -1,6 +1,7 @@
-'use client'
+
 import TypewriterText from '../components/TypewriterText'
 import React from 'react'
+
 import Program  from './component/Program'
 const Page = () => {
 

@@ -1,6 +1,6 @@
 
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 const Modal = ({ modal, setModal }) => {
@@ -102,7 +102,7 @@ const Modal = ({ modal, setModal }) => {
             <h1 className="text-[#0F4082] text-[16px] sm:text-[18px] md:text-[20px] mt-6 mb-3 font-bold">
               What You'll Gain
             </h1>
-            {modal.Achievements.map((achievement, idx) => (
+            {modal.achievements.map((achievement, idx) => (
               <div key={idx} className="flex gap-3 justify-start items-center pb-2">
                 <Image src="/tickcircle.svg" alt="tick" width={24} height={24} />
                 <p className="text-sm sm:text-base text-[#4B5564]">{achievement}</p>
@@ -110,7 +110,7 @@ const Modal = ({ modal, setModal }) => {
             ))}
 
             <div className="mt-8 sm:mt-12 py-6 px-4 sm:py-8 sm:px-6 bg-[#f2f2f2] rounded-[12px] border-l-2 border-l-[#82510F]">
-              {modal.reviews.map((review, idx) => (
+              {modal.testimonials.map((review, idx) => (
                 <div className="md:flex justify-start items-center gap-3.5" key={idx}>
                     {review.image === '' ?(
                         <div               
@@ -126,7 +126,7 @@ const Modal = ({ modal, setModal }) => {
                   />)}
                   <div>
                     <h1 className="text-[16px] text-black font-semibold">{review.name}</h1>
-                    <p>{review.comment}</p>
+                    <p>{` “${review.comment}”`}</p>
                   </div>
                 </div>
               ))}
@@ -236,11 +236,19 @@ const Modal = ({ modal, setModal }) => {
 
 
 const Program = () => {
- 
+   const [program, setProgram] = useState([])
   const [category, setCategory] = useState('All Programs');
   const [modal, setModal] = useState(null);
 
-  const ProgramCards = [
+ useEffect(() => {
+    async function fetchPrograms() {
+      const res = await fetch('/api/programs') // create an API route that calls getPrograms()
+      const data = await res.json()
+      setProgram(data)
+    }
+    fetchPrograms()
+  }, [])
+  /*const program = [
     {
       category: 'Leadership',
       title: 'Community Mentorship Program',
@@ -251,14 +259,14 @@ const Program = () => {
       duration: '6 months',
       classSize: '20-25 participants',
       prerequisites: ['18+ years old', ' Commitment to program duration', ' Basic interview process'],
-      Achievements: [
+     achievements: [
         'Develop personal leadership style',
         'Build professional network',
         'Gain industry insights and career guidance',
         'Improve decision-making skills',
         'Access to exclusive leadership workshops',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/elena.png',
           name: 'Maria Rodriguez',
@@ -278,14 +286,14 @@ const Program = () => {
       duration: '8 weeks',
       classSize: '15-20 participants',
       prerequisites: ['Professional or academic background', 'Willingness to participate in group activities'],
-      Achievements: [
+     achievements: [
         'Enhanced verbal and written communication',
         'Improved emotional intelligence',
         'Better conflict resolution abilities',
         'Stronger teamwork and collaboration skills',
         'Increased adaptability to change',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/pici.png',
           name: 'James Thompson',
@@ -304,14 +312,14 @@ const Program = () => {
       duration: '10 weeks',
       classSize: '25-30 participants',
       prerequisites: ['Basic math skills', 'Willingness to share financial goals (confidentially)'],
-      Achievements: [
+     achievements: [
         'Create and maintain effective budgets',
         'Understand investment principles',
         'Develop debt reduction strategies',
         'Build emergency funds and savings plans',
         'Learn retirement and long-term financial planning',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/lisa.png',
           name: 'Lisa Chen',
@@ -331,14 +339,14 @@ const Program = () => {
       duration: '12 weeks',
       classSize: '12-15 participants',
       prerequisites: ['High school level math and science', 'Access to computer/internet', 'Curiosity and willingness to learn'],
-      Achievements: [
+     achievements: [
         'Solid foundation in STEM principles',
         'Hands-on laboratory and coding experience',
         'Critical thinking and analytical skills',
         'Understanding of scientific method',
         'Preparation for STEM career paths',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/alex.png',
           name: 'Alex Johnson',
@@ -357,14 +365,14 @@ const Program = () => {
       duration: '6 weeks intensive',
       classSize: '10-12 participants',
       prerequisites: ['Business idea or strong interest in entrepreneurship', 'Time commitment for intensive program'],
-      Achievements: [
+     achievements: [
         'Complete business plan and pitch deck',
         'Market validation and customer discovery',
         'Understanding of funding options and investor relations',
         'Digital marketing and growth strategies',
         'Network of fellow entrepreneurs and mentos',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/sarah.png',
           name: 'Sarah Kim',
@@ -384,14 +392,14 @@ const Program = () => {
       duration: '4 weeks',
       classSize: '20-25 participants',
       prerequisites: ['Basic computer access', 'No prior experience required'],
-      Achievements: [
+     achievements: [
         'Proficiency in essential software applications',
         'Internet safety and privacy knowledge',
         'Social media and digital communication skills',
         'Basic troubleshooting and problem-solving',
         'Understanding of emerging technologies',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/robert.png',
           name: 'Robert Martinez',
@@ -411,14 +419,14 @@ const Program = () => {
       duration: '8 weeks',
       classSize: '15-20 participants',
       prerequisites: ['Interest in cultural exploration', 'Respect for diverse backgrounds'],
-      Achievements: [
+     achievements: [
         'Deeper understanding of cultural heritage',
         'Skills in cultural storytelling and preservation',
         'Cross-cultural communication abilities',
         'Community event planning experience',
         'Network of culturally diverse peers',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/amara.png',
           name: 'Amara Okafor',
@@ -437,14 +445,14 @@ const Program = () => {
       duration: '10 weeks',
       classSize: '12-15 participants',
       prerequisites: ['Interest in cultural exploration','Respect for diverse backgrounds'],
-      Achievements: [
+     achievements: [
         'Policy analysis and research skills',
         'Advocacy campaign development',
         'Coalition building and partnership strategies',
         'Public speaking and presentation skills',
         'Direct experience with policy makers',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/david.png',
           name: 'David Park',
@@ -462,14 +470,14 @@ const Program = () => {
       duration: '6 weeks',
       classSize: '15-18 participants',
       prerequisites: ['Passion for community change', 'Commitment to program activities'],
-      Achievements: [
+     achievements: [
         'Community assessment and power mapping skills',
         'Campaign strategy development',
         'Grassroots fundraising techniques',
         'Public narrative and storytelling',
         'Leadership development and delegation',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/carmen.png',
           name: 'Carmen Rodriguez',
@@ -488,14 +496,14 @@ const Program = () => {
       duration: '6 months',
       classSize: '20-25 participants',
       prerequisites: ['Ages 16-24', 'Commitment to full program', 'Interest in leadership development'],
-      Achievements: [
+     achievements: [
         'Personal leadership style development',
         'Public speaking and presentation confidence',
         'Social impact project completion',
         'Peer mentorship and networking',
         'College and career readiness skills',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/jordan.png',
           name: 'Jordan Williams',
@@ -514,14 +522,14 @@ const Program = () => {
       duration: '8 weeks',
       classSize: '12-15 participants',
       prerequisites: ['Ages 14-22', 'Basic computer skills', 'Curiosity about technology'],
-      Achievements: [
+     achievements: [
         'Programming skills in multiple langauges',
         'Completed tech projects and portfolio',
         'Understanding of emerging technologies',
         'Teamwork and problem-solving abilities',
         'Preparation for tech career paths',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/maya.png',
           name: 'Maya Patel',
@@ -539,14 +547,14 @@ const Program = () => {
       duration: '6 weeks',
       classSize: '10-15 participants',
       prerequisites: ['Ages 16-25', 'Interest in social issues', 'Commitment to civic engagement'],
-      Achievements: [
+     achievements: [
         'Issue research and analysis skills',
         'Policy proposal development',
         'Public speaking and advocacy abilities',
         'Direct engagement with community leaders',
         'Civic engagement and voting readiness',
       ],
-      reviews: [
+     testimonials: [
         {
           image: '/kai.png',
           name: 'Kai Thompson',
@@ -555,7 +563,7 @@ const Program = () => {
         },
       ],
     },
-  ]
+  ]*/
 
   const Lists = [
     'All Programs',
@@ -565,8 +573,8 @@ const Program = () => {
     'Youth Empowerment',
   ]
 
-   const filteredPrograms =        category === 'All Programs' ? ProgramCards
-         : ProgramCards.filter(program => program.category === category);
+   const filteredPrograms =        category === 'All Programs' ? program
+         : program.filter(prog => prog.category === category);
     
 
   return (
@@ -584,9 +592,11 @@ const Program = () => {
         </button>
       ))}
     </div>
-    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 justify-center items-stretch mt-1'>
+    <div className={`  ${ filteredPrograms.length === 0 ? 'flex justify-center items-center mt-1' : 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6  justify-center items-stretch mt-1'}`}>
     {filteredPrograms.length === 0 ? (
-      <p className="text-center text-[#000000]  mt-30  ">No programs available in this category.</p>
+    
+      <p className="text-center text-[#000000] w-[100%] bg-red-300 m-auto  mt-30  ">No programs available in this category.</p>
+     
     ):(
        filteredPrograms.map((program, index) => (
         <div

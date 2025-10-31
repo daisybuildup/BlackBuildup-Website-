@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { programs } from '../../../data/program'
 import Link from 'next/link';
