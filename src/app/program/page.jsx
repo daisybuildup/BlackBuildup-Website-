@@ -3,6 +3,7 @@ import TypewriterText from '../components/TypewriterText'
 import React from 'react'
 
 import Program  from './component/Program'
+import ButtonDiv from './component/ButtonDiv'
 const Page = () => {
 
   
@@ -23,12 +24,8 @@ const Page = () => {
     <section className='py-[72px] px-[25px] flex flex-col justify-center items-center text-center  bg-[#0F4082] '>
        <h1 className='md:text-[40px] text-white text-[30px] font-bold'>Ready to Make Your Impact?</h1>
        <p className='pt-4 pb-8 text-white/70'>Your community needs leaders like you. Take the first toward creating the change you want to see in the <br/>word.</p>
-       <div className='flex flex-wrap justify-center items-center gap-6'>
-         <button className="bg-[#AD8E63] text-white py-3 cursor-pointer  px-[35px] w-[225px] font-medium rounded-2xl">Join a Program</button>
-         <button className="bg-[#E5E7EBF6] text-[#0F4082] py-3 cursor-pointer hover:bg-blue-200 px-[35px] w-[225px] font-medium rounded-2xl">Volunteer</button>
-         <button className="bg-[#E5E7EBF6] text-[#0F4082] py-3 cursor-pointer hover:bg-blue-200 px-[35px] w-[225px] font-medium rounded-2xl">Contact Us</button>
-       </div>
       
+      <ButtonDiv/>
         </section>
 
    
