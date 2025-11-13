@@ -25,8 +25,8 @@ const [isSignOpen, setIsSignOpen] = useState(false);
         <div className="flex flex-col gap-[30px] mt-[-200px] px-[40px]">
           <Link href="/about" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">About</Link>
           <Link href="/program" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Programs</Link>
-          <Link href="/advocacy" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Advocacy</Link>
-          <Link href="/contact" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Contact</Link>
+          <Link href="/partnership" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Partnership</Link>
+          <Link href="/news-and-events" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">News and Events</Link>
           <p  className="text-white text-[18px] font-semibold" onClick={() => setIsSignOpen(true)}>Sign In</p>
           <Link href="/" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Donate</Link>
         </div>

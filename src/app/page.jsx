@@ -52,7 +52,7 @@ const impacts = [
       </div>
      </section>
      <section className=' md:px-11 px-5  py-[72px] mt-[72px] w-full h-auto bg-[#0F4082] text-white flex flex-col justify-center items-center'>
-      <h2 className='p-2.5 bg-[#F5F6FA] rounded-full font-medium text-[#0F4082]'>Our Mission</h2>
+      <h2 className='p-2.5 bg-[#F5F6FA] rounded-full font-medium text-[#0F4082]'>What we do</h2>
       <h1 className="lg:text-[40px] text-center text-[20px] md:text-[30px] font-semibold pt-6">Building Western Canada's Strongest Black Entrepreneurship Ecosystem</h1>
       <p className='text-lg mt-3.5 text-white/70 text-center md:max-w-[65%]'>Through targeted programs and deep collaboration, we address systemic barriers and create lasting economic change. Together with our consortium of partners, we've achieved:</p>
       <ProgramCard/>
@@ -61,7 +61,7 @@ const impacts = [
   <ModalCardSection/>
      </section>
      <section className='md:px-11 w-full h-auto py-[72px] bg-[#ffffff] text-black flex flex-col justify-center items-center'>
-      <h2 className=' py-2.5 px-2.5 bg-[#edf0fc] text-center shadow-sm text-[#0F4082] font-medium rounded-full'>Our Pillars</h2>
+      <h2 className=' py-2.5 px-2.5 bg-[#edf0fc] text-center shadow-sm text-[#0F4082] font-medium rounded-full'>Our Pillars Of Work</h2>
       <h1 className='text-[#0F4082] font-semibold lg:text-[40px] text-[30px] text-center pt-6 pb-4'>Our Four Pillars</h1>
       <p className='text-[#4B5564] text-[18px] pb-9 text-center w-[95%] lg:w-[70%] xl:w-[60%] '>Everything we do is built on these four foundational pillars that guide our mission to empower communities and shape leaders across Canada</p>
       <PillarCard/>
@@ -76,7 +76,7 @@ const impacts = [
      <section className='w-full h-auto text-center text-[#4B5564] flex justify-center items-center flex-col bg-[#ffff] py-[72px]'>
        <h2 className="bg-[#edf0fc] text-[#0f4082] text-base md:text-[20px] rounded-full shadow-sm py-2.5 px-2.5 font-medium  ">Our Mission</h2>
        <h1 className='pt-6 pb-4 md:text-[40px] text-[24px]  text-[#0F4082] text-center font-bold'>Our Story, Our Mission</h1>
-       <p className='lg:w-[55%] w-[90%] h-auto'>The Canada Community and Leadership Center was founded in 2021 to address the specific needs of Canadians while building bridges across diverse communities.</p>
+       <p className='lg:w-[55%] w-[90%] h-auto'>Blackbuildup was founded in 2021 to address the specific needs of Canadians while building bridges across diverse communities.</p>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 mt-8 justify-center px-5">
   {/* Mission */}
   <div className="w-full max-w-[620px] h-auto py-8 px-6 text-white bg-[#0f4082]  rounded-[12px]">
@@ -84,16 +84,9 @@ const impacts = [
       Our Mission
     </h1>
     <h2 className="text-left">
-      To develop and empower community leaders through innovative programs,
-      strategic partnerships, and sustainable initiatives that create lasting
-      positive change in communities worldwide.
+    To empower Black-led and Black-serving organizations in British Columbia through comprehensive training, strategic partnerships, and ecosystem development—driving inclusive business growth, job creation, and social change.
     </h2>
-    <ul className="text-left list-disc mt-3 marker:text-[#AD8E63] flex flex-col gap-3 pl-5">
-      <li>Executive Coaching</li>
-      <li>Team Building</li>
-      <li>Strategic Planning</li>
-      <li>Communication Skills</li>
-    </ul>
+  
   </div>
 
   {/* Vision */}
@@ -102,15 +95,9 @@ const impacts = [
       Our Vision
     </h1>
     <h2 className="text-left">
-      To be the catalyst for a global network of empowered communities where
-      every individual has the opportunity to lead, contribute, and thrive in
-      an inclusive environment.
+     A vibrant, self-sustaining Black entrepreneurship ecosystem in BC and Western Canada: innovative, interconnected, and community-driven, where every Black business has access to capital, markets, and support.
     </h2>
-    <ul className="text-left list-disc mt-3 marker:text-[#0F4082] flex flex-col gap-3 pl-5">
-      <li>Global network of connected communities</li>
-      <li>Accessible leadership opportunities for all</li>
-      <li>Sustainable community transformation</li>
-    </ul>
+   
   </div>
 </div>
 
@@ -121,7 +108,7 @@ const impacts = [
        <h1 className='pt-6 pb-4 md:text-[40px] text-[30px] text-[#0F4082] text-center  font-bold'>Our National Impact</h1>
        <p className="px-[20px]">Measuring the difference we’re making in communities across the country through data-driven insights.</p>
        <NationalCard/>
-       <div className='w-[90%] h-auto py-[48px] shadow-xl mt-8 bg-white rounded-[12px]'>
+       {/*<div className='w-[90%] h-auto py-[48px] shadow-xl mt-8 bg-white rounded-[12px]'>
         <h1 className='pt-8 pb-4 md:text-[32px]  text-[20px] text-[#0F4082] text-center font-bold'>Communities We Serve</h1>
         <p className='text-[18px]'>Our programs reach communities in all 50 states</p>
         <div className="flex pt-7.5 flex-wrap justify-center items-center md:gap-[30px] px-[20px] gap-[10px] xl:gap-[70px]">
@@ -132,7 +119,7 @@ const impacts = [
           <Image src='/picv.png' alt='person' width={128} height={128} className='rounded-full object-cover xl:w-[128px] xl:h-[128px] w-[60px] h-[60px] '/>
           <Image src='/picvi.png' alt='person' width={128} height={128} className='rounded-full object-cover xl:w-[128px] xl:h-[128px] w-[60px] h-[60px] '/>
         </div>
-       </div>
+       </div>*/}
       </section>
 
      <section className='py-[72px] px-[20px] flex flex-col justify-center items-center'>

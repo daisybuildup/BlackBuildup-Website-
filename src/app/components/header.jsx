@@ -14,12 +14,12 @@ const Header = () => {
   const navLinks = [
     { name: "About", href: "/about" },
     { name: "Programs", href: "/program" },
-    { name: "Advocacy", href: "/advocacy" },
-    { name: "Contact", href: "/contact" },
+    { name: "Partnership", href: "/partnership" },
+    { name: "News and Events", href: "/news-and-events" },
   ];
 
   return (
-    <header className="font-mont fixed z-[1000] bg-[#F5F5F5] w-full text-[#3360A0] flex py-5 justify-between items-center xl:px-15 px-5">
+    <header className="font-mont max-w-[1530px] fixed z-[1000] bg-[#F5F5F5] w-full text-[#3360A0] flex py-5 justify-between items-center xl:px-15 px-5">
       <Link href="/">
          <Image src='/cclclogo.svg' alt='logo'width={160} height={64} className='md:w-[160px] md:h-[60px] w-[120px] h-[50px]'/>
       </Link>
@@ -41,10 +41,10 @@ const Header = () => {
       </nav>
 
       <div className="flex items-center md:gap-6 gap-3">
-        <div>
+        {/*<div>
           <button>En</button>
           <button>Fr</button>
-        </div>
+        </div>*/}
         <div className="hidden lg:flex gap-2.5">
           <button
             onClick={() => setIsSignOpen(true)}

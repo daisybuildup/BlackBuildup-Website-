@@ -24,6 +24,7 @@ const footer = () => {
             <li>Social Enterprise</li>
             </ul>
         </div>
+        {/*
         <div className=' h-auto'>
             <h1 className='font-semibold text-[#0F4082] text-[18px]'>Resource</h1>
             <ul className="pt-4 flex flex-col gap-4">
@@ -33,15 +34,16 @@ const footer = () => {
                 <li>Success Stories</li>
                 <li>Research & Report</li>
             </ul>
-        </div>
+        </div>*/}
         <div className=' h-auto'>
             <h1 className='font-semibold text-[#0F4082] text-[18px]'>Support</h1>
             <ul className="pt-4 flex flex-col gap-4">
                 <li>Contact Us</li>
-                <li>FAQ</li>
-                <li>Help Center</li>
                 <li>Privacy Policy</li>
-                <li>Terms of Service</li>
+                {/*<li>FAQ</li>
+                <li>Help Center</li>
+               
+                <li>Terms of Service</li>*/}
             </ul>
         </div>
         <div className=' h-auto'>
@@ -55,15 +57,25 @@ const footer = () => {
                     </div>
                     <div className=' h-auto'>
                         <h1 className='font-semibold text-[#0F4082] pt-4 text-[18px]'>Get in Touch</h1>
-           <p className='pt-4 flex gap-[12px] justify-start items-center'><Image src='/sms.svg' width={24} height={24}  alt="sms"/>hello@youthlead.ca</p>
-           <p className='pt-4 flex gap-[12px] justify-start items-center'><Image src='/call.svg' width={24} height={24} alt="sms"/>1-800-YOUTH-LEAD</p>
-           <p className='pt-4 flex gap-[12px] justify-start items-center'><Image src='/location.svg' width={24} height={24} alt="sms"/>Offices across Canada</p>
+          <div className="flex items-center gap-3 pt-4">
+  <Image src="/sms.svg" width={24} height={24} alt="sms" />
+  <a
+    href="mailto:info@blackbuildup.ca"
+    className=" hover:underline"
+  >
+    info@blackbuildup.ca
+  </a>
+</div>
+
+
+           <p className='pt-4 flex gap-[12px] justify-start items-center'><Image src='/call.svg' width={24} height={24} alt="sms"/>+1 778 837 3282</p>
+           <p className='pt-4 flex gap-[12px] justify-start items-center'><Image src='/location.svg' width={24} height={24} alt="sms"/>422 Richards St, Suite 170 Vancouver, BC V6B 2Z4</p>
                     </div>
                     </div>
        
        <hr className='  bg-[#E5E7EB] h-[1px] mt-[30px] mb-[40px]'/>
        <div className='flex flex-wrap justify-between items-center gap-4  pb-[30px]'>
-       <p className='text-[#4B5564]'>© 2025 YouthLead. All rights reserved. Empowering youth since 2020.</p>
+       <p className='text-[#4B5564]'>Blackbuildup 2025. All rights reserved</p>
          <div>
        {
         links.map((link,idx)=>(

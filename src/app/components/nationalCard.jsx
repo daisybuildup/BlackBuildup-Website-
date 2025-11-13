@@ -7,25 +7,27 @@ import { useInView } from "react-intersection-observer";
 const NationalCard = () => {
   const cards = [
     {
-      value: 75,
-      suffix: "%",
-      text: "increase in community engagement",
-    },
-    {
-      value: 90,
-      suffix: "%",
-      text: "of participants report improved leadership skills",
-    },
-    {
-      value: 200,
+      value: 3000,
       suffix: "+",
-      text: "community partnerships established",
+      text: "Black entrepreneurs and professionals trained",
     },
     {
-      value: 2,
-      prefix: "$",
-      suffix: "M+",
-      text: "in community investments facilitated",
+
+      value: 8,
+       prefix: "~$",
+      suffix: "M",
+      text: "raised for the Black entrepreneurship ecosystem",
+    },
+    {
+      value: 5000,
+      suffix: "+",
+      text: "individuals reached across BC",
+    },
+    {
+      value: 100,
+     
+      suffix: "+",
+      text: "notable speakers featured at our events",
     },
   ];
 

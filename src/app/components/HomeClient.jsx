@@ -43,7 +43,7 @@ export function ModalCardSection() {
 
   return (
     <div>
-      <button className="mt-12 py-3 px-3.5 bg-[#AD8E63] rounded-2xl cursor-pointer hover:bg-[#a57d45]" onClick={()=>setIsModalOpen(true)}>Learn More About CCLC</button>
+      <button className="mt-12 py-3 px-3.5 bg-[#AD8E63] rounded-2xl cursor-pointer hover:bg-[#a57d45]" onClick={()=>setIsModalOpen(true)}>Learn More About Blackbuildup</button>
       {/* Modal Section */}
         {isModalOpen && <ModalCard setIsOpenProp={setIsModalOpen}
       modal={{titleone: "Our Organization",
