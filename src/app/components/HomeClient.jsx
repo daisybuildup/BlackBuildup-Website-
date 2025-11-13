@@ -9,10 +9,10 @@ export default function GetInvolvedSection() {
   return (
     <div>
       <button
-        className="text-white bg-[#AD8E63] hover:bg-[#a57d45] cursor-pointer py-3 px-8.5 font-medium rounded-[14px]"
+        className="text-[#0F4082] border-[#0F4082] border cursor-pointer hover:bg-[#0f4082] hover:text-white  py-3 px-10 font-medium rounded-[14px]"
         onClick={() => setIsInvolveOpen(true)}
       >
-        Get Involved Today
+        Patner With Us
       </button>
 
       {isInvolveOpen && (

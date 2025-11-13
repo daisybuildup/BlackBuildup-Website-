@@ -28,8 +28,8 @@ const impacts = [
      <section className='xl:grid-cols-2 grid justify-between items-center pt-[150px] px-5 mx-auto md:mx-11 gap-[20px] xl:gap-[270px]'>
       <div className=' flex flex-col justify-center xl:items-start items-center '>
       <h2 className=' text-[#0F4082] md:text-[20px] text-[14px] bg-[#edf0fc] xl:text-left text-center  font-medium rounded-2xl xl:w-[411px]  px-2.5 py-2.5'>Empowering Communities Since 2020 </h2>
-      <h1 className=' lg:text-[40px] text-[#AD8E63] md:w-[85%] xl:text-left text-center xl:w-full mt-4   md:mt-6 md:text-[30px]  text-[20px] font-bold'>Empowering <span className='text-[#333333]'>Communities,</span> Shaping <span className="text-[#333333]">Leaders</span></h1>
-      <p className='text-[#4B5564] md:text-lg  text-base text-center w-[90%] xl:w-full xl:text-left mt-6'>We are Canada’s hub for advocacy, leadership, and innovation with Black communites</p>
+      <h1 className=' lg:text-[40px] text-[#AD8E63] md:w-[85%] xl:text-left text-center xl:w-full mt-4   md:mt-6 md:text-[30px]  text-[20px] font-bold'>Empowering <span className='text-[#333333]'>Black Entrepreneurs.</span> Building <span className="text-[#333333]">Resilient</span> Communities <span className="text-[#333333]">in BC and Beyond.</span></h1>
+      <p className='text-[#4B5564] md:text-lg  text-base text-center w-[90%] xl:w-full xl:text-left mt-6'>As a Black-led ecosystem organization, Black Buildup advances inclusive business growth for Black-owned and Black-serving ventures across British Columbia and Western Canada. We provide culturally responsive training, mentorship, strategic partnerships, and access to capital—helping entrepreneurs thrive while fostering economic empowerment and community strength.</p>
       <div className='flex justify-center flex-wrap md:flex-nowrap xl:justify-start items-center gap-6 mt-6'>
       {/*<button className='text-white bg-[#AD8E63] hover:bg-[#a57d45] cursor-pointer py-3 px-8.5 font-medium rounded-[14px]' onClick={()=>setInvolve(true)}>Get Involved Today</button>
       {Involve &&<Cohort setIsOpenProp={()=>setInvolve(false)}
@@ -42,8 +42,9 @@ const impacts = [
 
              }
              /> }*/}
+              <Link href='/program'><button  className='text-white bg-[#AD8E63] hover:bg-[#a57d45] cursor-pointer py-3 px-8.5 font-medium rounded-[14px]'>Explore Programs</button></Link>
              <GetInvolvedSection/>
-      <Link href='/program'><button  className='text-[#0F4082] border-[#0F4082] border cursor-pointer hover:bg-[#0f4082] hover:text-white  py-3 px-10 font-medium rounded-[14px]'>Explore Programs</button></Link>
+     
       </div>
       </div>
       <div className='w-auto flex justify-center items-center'>
@@ -52,8 +53,8 @@ const impacts = [
      </section>
      <section className=' md:px-11 px-5  py-[72px] mt-[72px] w-full h-auto bg-[#0F4082] text-white flex flex-col justify-center items-center'>
       <h2 className='p-2.5 bg-[#F5F6FA] rounded-full font-medium text-[#0F4082]'>Our Mission</h2>
-      <h1 className="lg:text-[40px] text-center text-[20px] md:text-[30px] font-semibold pt-6">Building Stronger Communities Through Leadership</h1>
-      <p className='text-lg mt-3.5 text-white/70 text-center'>Our impact speaks for itself. Join thousands of leaders who are making a difference in their communities.</p>
+      <h1 className="lg:text-[40px] text-center text-[20px] md:text-[30px] font-semibold pt-6">Building Western Canada's Strongest Black Entrepreneurship Ecosystem</h1>
+      <p className='text-lg mt-3.5 text-white/70 text-center md:max-w-[65%]'>Through targeted programs and deep collaboration, we address systemic barriers and create lasting economic change. Together with our consortium of partners, we've achieved:</p>
       <ProgramCard/>
       
       {/* Modal Section */}

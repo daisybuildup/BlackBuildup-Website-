@@ -6,10 +6,10 @@ import { useInView } from "react-intersection-observer";
 
 const ProgramCard = () => {
   const cards = [
-    { number: 250, suffix: "+", description: "Communities Served", text: "Across the nation" },
-    { number: 1000, suffix: "+", description: "Leaders Trained", text: "Since our founding" },
-    { number: 50, suffix: "+", description: "Programs Launched", text: "Across initiatives" },
-    { number: 95, suffix: "%", description: "Success Rate", text: "Program completion" },
+    { number: 3000, suffix: "+",  text: "Black entrepreneurs and professionals trained" },
+    { number: 8, prefix: "~$", suffix: "M",  text: "raised for the Black entrepreneurship ecosystem" },
+    { number: 5000, suffix: "+",    text: "individuals reached across BC" },
+    { number: 100, suffix: "+",    text: "notable speakers featured at our events" },
   ];
 
   return (
@@ -30,24 +30,21 @@ const ProgramCard = () => {
             ref={ref}
             key={index}
             className="
-              flex flex-col justify-between items-center
-              w-full max-w-[330px] min-h-[240px]
-              py-13 px-6
+              flex flex-col justify-start items-center
+              w-full max-w-[330px] min-h-[172px]
+              py-10 px-6
               bg-[#3360A0] rounded-[16px] shadow-md
               text-center
             "
           >
             {/* Number */}
             <h1 className="text-[40px] font-bold text-[#AD8E63]">
+              {card.prefix}
               {inView ? <CountUp end={card.number} duration={2.5} /> : 0}
               {card.suffix}
             </h1>
 
-            {/* Description */}
-            <h2 className="text-[22px] font-semibold text-white mt-2">
-              {card.description}
-            </h2>
-
+            
             {/* Subtext */}
             <p className="text-white/70 text-[16px] mt-1">{card.text}</p>
           </div>
