@@ -12,7 +12,7 @@ const Header = () => {
   const pathname = usePathname();
 
   const navLinks = [
-    { name: "About", href: "/about" },
+    { name: "About Us", href: "/about" },
     { name: "Programs", href: "/program" },
     { name: "Partnership", href: "/partnership" },
     { name: "News and Events", href: "/news-and-events" },
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className="font-mont max-w-[1530px] fixed z-[1000] bg-[#F5F5F5] w-full text-[#3360A0] flex py-5 justify-between items-center xl:px-15 px-5">
       <Link href="/">
-         <Image src='/cclclogo.svg' alt='logo'width={160} height={64} className='md:w-[160px] md:h-[60px] w-[120px] h-[50px]'/>
+         <Image src='/blackbuildup.png' alt='logo'width={190} height={90} className='md:w-[190px] md:h-[90px] w-[125px] h-[60px]'/>
       </Link>
 
       <nav className="lg:block hidden">

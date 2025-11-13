@@ -12,7 +12,7 @@ export default function GetInvolvedSection() {
         className="text-[#0F4082] border-[#0F4082] border cursor-pointer hover:bg-[#0f4082] hover:text-white  py-3 px-10 font-medium rounded-[14px]"
         onClick={() => setIsInvolveOpen(true)}
       >
-        Patner With Us
+        Partner With Us
       </button>
 
       {isInvolveOpen && (

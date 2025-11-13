@@ -9,31 +9,30 @@ const Achievement = () => {
   const cards = [
     {
         img: '/trendup.svg',    
-        value: 350,
-      suffix: "%",
-      subtext:'Year-over-year increase',
-      text: "Communities Served",
+        value: 3000,
+      suffix: "+",
+      text: "Entreprenuers & Professionals Served",
     },
     {
-        img: '/puser.svg',    
-        value: 12550,
+        img: '/puser.svg',
+        prefix: "~",    
+        value: 5000,
       suffix: "+",
-      subtext:'Year-over-year increase',
-      text: "Youth Empowered",
+      text: "Total Community Reach",
+    },
+        {
+        img: '/flagcanada.svg', 
+        prefix: "~$",   
+        value: 8,
+      suffix: "M",
+      text:'Funds Raised For The Ecosystem',
+     
     },
     {
         img: '/award.svg',    
-        value: 150,
+        value: 100,
       suffix: "+",
-      subtext:'Universities, corporations. nonprofits',
-      text: "Partnerships Established",
-    },
-    {
-        img: '/flagcanada.svg',    
-        value: 8,
-      suffix: "",
-      subtext:'Coast to coast impact',
-      text: "Provinces Served",
+      text: "Notable Speakers Engaged",
     },
   ];
 

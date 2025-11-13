@@ -12,19 +12,19 @@ const Page = () => {
 //for the  collaborators
   const collaborators =[
     {svg:'/teacher.svg', text:'Universities', subtext:'Academic partnerships for research and development'},
-    {svg:'/home.svg', text:'Universities', subtext:'Private sector collaboration and fund support'},
+    {svg:'/home.svg', text:'Financial Institutions', subtext:'Private sector collaboration and fund support'},
     {svg:'/nonprofit.svg', text:'Nonprofits', subtext:'Community organizations working toward shared goals'},
     {svg:'/bank.svg', text:'Government', subtext:'Public sector programs and policy initiatives'},
     
   ]
 
   const partners = [
-    { name: 'University of Toronto', logo: '/utoronto.png' },
-    { name: 'Government of Canada', logo: '/canadagov.png' },
-    { name: 'Bell Canada', logo: '/belllogo.png' },
-    { name: 'United Way', logo: '/unitedway.png' },
-    { name: 'RBC Foundation', logo: '/rbcfoundation.png' },
-    { name: 'McGill University', logo: '/mcgill.png' },
+    { name: 'BMO Canada', logo: '/utoronto.png' },
+    { name: 'WeBC', logo: '/canadagov.png' },
+    { name: 'EDC', logo: '/belllogo.png' },
+    { name: 'WAGE', logo: '/unitedway.png' },
+    { name: 'FACE', logo: '/rbcfoundation.png' },
+    { name: 'FFBC', logo: '/mcgill.png' },
    
   ];
   return (
@@ -59,20 +59,23 @@ const Page = () => {
   </section>
 
 <section className='bg-[#E6E6E6]/25 w-full flex flex-col justify-center items-center py-10  px-5 md:px-16'>
-   <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Leadership Team</h1>
-   <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>Meet the passionate leaders driving our mission forward with decades of combined experience in social impact and community building.</p>
+   <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Our Leadership</h1>
+   <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>A 100% Black-Identified Team Rooted in BC's Landscape</p>
 <Leadership/>
 </section>
 
 <section className='bg-[#F5F6FA] w-full flex flex-col justify-center items-center py-10  px-5 md:px-16'>
-    <h1 className='text-[#0F4082] font-bold text-center lg:text-[40px] text-[30px]'>Our Impact & Achievements</h1>
+    <h1 className='text-[#0F4082] font-bold text-center lg:text-[40px] text-[30px]'>Our Achievements & Credibility</h1>
        <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>These number tell the story of our commitment to creating meaningful change and empowering communities.</p>
        <Achievement/>
 </section>
 
   <section className='bg-white w-full flex flex-col justify-center items-center py-10 px-5 md:px-16'>
-<h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[30px]'>Our Journey</h1>
-<Image alt='journey' src='/journey.svg' width={1100} height={400} className=' w-100% h-auto mt-9'/>
+{/*<h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[30px]'>Our Journey</h1>
+<Image alt='journey' src='/journey.svg' width={1100} height={400} className=' w-100% h-auto mt-9'/>*/}
+<h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[30px]'>Our Story</h1>
+<p className='xl:max-w-[65%] pt-4 pb-11 text-[#4B5564] text-center'>Founded to address systemic barriers for Black entrepreneurs in BC, Black Buildup has grown into a trusted leader with deep partnerships and a strong provincial footprint. We’ve supported thousands of entrepreneurs, co-delivered major summits and exhibits like the ACBC Summits and BWBN Women's Business Exhibits, and facilitated workshops for partners from the SBCCI to the FACE Coalition. Our work has mobilized a new generation of Black entrepreneurs, professionals, and ecosystem builders.
+Our Leadership</p>
   </section>
 
   <section className='bg-[#F5F6FA] w-full flex flex-col justify-center items-center py-18  px-5 md:px-16'>
