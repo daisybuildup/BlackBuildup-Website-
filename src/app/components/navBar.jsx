@@ -32,7 +32,7 @@ const [isSignOpen, setIsSignOpen] = useState(false);
         </div>
 
         <div className=" flex flex-col gap-2 font-semibold text-center  w-full">
-          <p className="text-white text-[18px]">hello@youthlead.ca</p>
+          <p className="text-white text-[18px]">info@blackbuildup.ca</p>
            <div>
                  {
                   links.map((link,idx)=>(
