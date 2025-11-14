@@ -25,7 +25,7 @@ const impacts = [
     <div className="max-w-380  mx-auto  ">
     <Header/>
    
-     <section className='xl:grid-cols-2 grid justify-between items-center pt-[150px] px-5 mx-auto md:mx-11 gap-[20px] xl:gap-[270px]'>
+     <section className='xl:grid-cols-2 grid justify-between items-center pt-[150px] px-5 mx-auto md:mx-11 gap-5 xl:gap-[270px]'>
       <div className=' flex flex-col justify-center xl:items-start items-center '>
       <h2 className=' text-[#0F4082] md:text-[20px] text-[14px] bg-[#edf0fc] xl:text-left text-center  font-medium rounded-2xl xl:w-[411px]  px-2.5 py-2.5'>Empowering Communities Since 2020 </h2>
       <h1 className=' lg:text-[40px] text-[#AD8E63] md:w-[85%] xl:text-left text-center xl:w-full mt-4   md:mt-6 md:text-[30px]  text-[20px] font-bold'>Empowering <span className='text-[#333333]'>Black Entrepreneurs.</span> Building <span className="text-[#333333]">Resilient</span> Communities <span className="text-[#333333]">in BC and Beyond.</span></h1>
@@ -79,7 +79,7 @@ const impacts = [
        <p className='lg:w-[55%] w-[90%] h-auto'>Blackbuildup was founded in 2021 to address the specific needs of Canadians while building bridges across diverse communities.</p>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 mt-8 justify-center px-5">
   {/* Mission */}
-  <div className="w-full max-w-[620px] h-auto py-8 px-6 text-white bg-[#0f4082]  rounded-[12px]">
+  <div className="w-full max-w-[620px] h-auto py-8 px-6 text-white bg-[#0f4082]  rounded-xl">
     <h1 className="text-white font-bold text-[30px] md:text-[40px] pb-6">
       Our Mission
     </h1>
@@ -90,7 +90,7 @@ const impacts = [
   </div>
 
   {/* Vision */}
-  <div className="w-full max-w-[620px] h-auto py-8 px-6 text-white bg-[#AD8E63] rounded-[12px]">
+  <div className="w-full max-w-[620px] h-auto py-8 px-6 text-white bg-[#AD8E63] rounded-xl">
     <h1 className="text-white font-bold text-[30px] md:text-[40px] pb-6">
       Our Vision
     </h1>
@@ -106,7 +106,7 @@ const impacts = [
       <section className='w-full h-auto text-center text-[#4B5564] flex justify-center items-center flex-col bg-[#F9FAFB] py-[72px]'>
        <h2 className="bg-[#edf0fc] text-[#0f4082] md:text-[20px] rounded-full shadow-sm py-2.5 px-2.5 font-medium  ">Our Impact</h2>
        <h1 className='pt-6 pb-4 md:text-[40px] text-[30px] text-[#0F4082] text-center  font-bold'>Our National Impact</h1>
-       <p className="px-[20px]">Measuring the difference we’re making in communities across the country through data-driven insights.</p>
+       <p className="px-5">Measuring the difference we’re making in communities across the country through data-driven insights.</p>
        <NationalCard/>
        {/*<div className='w-[90%] h-auto py-[48px] shadow-xl mt-8 bg-white rounded-[12px]'>
         <h1 className='pt-8 pb-4 md:text-[32px]  text-[20px] text-[#0F4082] text-center font-bold'>Communities We Serve</h1>
@@ -122,12 +122,12 @@ const impacts = [
        </div>*/}
       </section>
 
-     <section className='py-[72px] px-[20px] flex flex-col justify-center items-center'>
+     <section className='py-[72px] px-5 flex flex-col justify-center items-center'>
         <h2 className='text-[#0F4082] bg-[#edf0fc] rounded-full shadow-sm py-2.5 px-2.5 font-medium md:text-[20px]'>Our Mission</h2>
         <h1 className='md:text-[40px] text-[30px] text-[#0F4082] text-center font-bold pt-6 pb-4'>Voices of Change</h1>
         <p className='text-[#4B5564] text-center text-[18px]'>Hear from the leaders who are making a difference in their communities every day.</p>
         <Review/>
-        <div className=' xl:w-[60%] w-[95%] bg-[#0F4082] text-center flex justify-center items-center rounded-xl mt-[48px] flex-col py-8 px-[52px] gap-[24px] h-auto'>
+        <div className=' xl:w-[60%] w-[95%] bg-[#0F4082] text-center flex justify-center items-center rounded-xl mt-12 flex-col py-8 px-[52px] gap-6 h-auto'>
           <h1 className='md:text-[40px] text-white text-[30px] font-bold'>Ready to Add Your Voice?</h1>
           <h2 className='text-white/70'>Join our community of changemakers and start making the impact you’ve always envisioned</h2>
         <CohortCardSection/>
@@ -141,7 +141,7 @@ const impacts = [
       <button className="bg-[#E5E7EBF6] text-[#0F4082] py-3 cursor-pointer hover:bg-blue-200 px-[35px] font-medium rounded-2xl">Join Our Community</button>
       <Link href='/program'><button className="bg-[#E5E7EBF6] text-[#0F4082] py-3 cursor-pointer hover:bg-blue-200 px-[35px] font-medium rounded-2xl">Explore Programs</button></Link>
     </div>
-    <div className='flex justify-center mt-[56px]  gap-[10px] md:gap-[84px] items-start md:items-center'>
+    <div className='flex justify-center mt-14  gap-2.5 md:gap-[84px] items-start md:items-center'>
       {
         impacts.map((impact,index)=>(
           <div key={index} className='flex flex-col justify-center items-center'>

@@ -19,7 +19,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="font-mont max-w-[1530px] fixed z-[1000] bg-[#F5F5F5] w-full text-[#3360A0] flex py-5 justify-between items-center xl:px-15 px-5">
+    <header className="font-mont max-w-[1530px] fixed z-1000 bg-[#F5F5F5] w-full text-[#3360A0] flex py-5 justify-between items-center xl:px-15 px-5">
       <Link href="/">
          <Image src='/blackbuildup.png' alt='logo'width={190} height={90} className='md:w-[190px] md:h-[90px] w-[125px] h-[60px]'/>
       </Link>

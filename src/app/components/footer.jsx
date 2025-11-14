@@ -67,12 +67,12 @@ const footer = () => {
 </div>
 
 
-           <p className='pt-4 flex gap-[12px] justify-start items-center'><Image src='/call.svg' width={24} height={24} alt="sms"/>+1 778 837 3282</p>
-           <p className='pt-4 flex gap-[12px] justify-start items-center'><Image src='/location.svg' width={24} height={24} alt="sms"/>422 Richards St, Suite 170 Vancouver, BC V6B 2Z4</p>
+           <p className='pt-4 flex gap-3 justify-start items-center'><Image src='/call.svg' width={24} height={24} alt="sms"/>+1 778 837 3282</p>
+           <p className='pt-4 flex gap-3 justify-start items-center'><Image src='/location.svg' width={24} height={24} alt="sms"/>422 Richards St, Suite 170 Vancouver, BC V6B 2Z4</p>
                     </div>
                     </div>
        
-       <hr className='  bg-[#E5E7EB] h-[1px] mt-[30px] mb-[40px]'/>
+       <hr className='  bg-[#E5E7EB] h-px mt-[30px] mb-10'/>
        <div className='flex flex-wrap justify-between items-center gap-4  pb-[30px]'>
        <p className='text-[#4B5564]'>Blackbuildup 2025. All rights reserved</p>
          <div>
