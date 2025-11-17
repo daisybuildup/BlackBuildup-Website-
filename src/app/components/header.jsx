@@ -14,14 +14,14 @@ const Header = () => {
   const navLinks = [
     { name: "About Us", href: "/about" },
     { name: "Programs", href: "/program" },
-    { name: "Partnership", href: "/partnership" },
-    { name: "News and Events", href: "/news-and-events" },
+    { name: "Projects & Impacts", href: "/projects-and-impacts" },
+    { name: "News & Events", href: "/news-and-events" },
   ];
 
   return (
     <header className="font-mont max-w-[1530px] fixed z-1000 bg-[#F5F5F5] w-full text-[#3360A0] flex py-5 justify-between items-center xl:px-15 px-5">
       <Link href="/">
-         <Image src='/blackbuildup.png' alt='logo'width={190} height={90} className='md:w-[190px] md:h-[90px] w-[125px] h-[60px]'/>
+         <Image src='/blackbuildup.png' alt='logo'width={144} height={74} className='md:w-[144px] md:h-[74px] w-[120px] h-[60px]'/>
       </Link>
 
       <nav className="lg:block hidden">

@@ -9,14 +9,14 @@ const Page = () => {
   
   return (
     <>
-   <div className="relative md:h-[70vh] h-[60vh] bg-[url('/programjpg.jpg')] bg-cover bg-center">
+   <div className="relative md:h-[80vh] h-[60vh] bg-[url('/programbg.jpg')] bg-cover bg-center">
     {/* Overlay */}
     <div className="absolute inset-0 bg-[#0F4082]/50"></div>
 
     {/* Content */}
     <div className="relative flex flex-col text-center px-5 items-center justify-center h-full">
-      <h1 className="text-white md:text-4xl text-[30px] font-bold">Our Programs</h1>
-      <TypewriterText text={['Explore leadership, technology, advocacy, and youth empowerment']}/>
+      <h1 className="text-white md:text-4xl text-[20px] font-bold pb-4 md:w-[55%] text-center" >Culturally-Responsive Programs for BC's Black Entrepreneurs</h1>
+      <TypewriterText  text={['We empower Black entrepreneurs in BC to launch and scale sustainable businesses. Our programs—delivered with partners like ESDC, WAGE, and BCIT—provide the mentorship, tools, and networks to drive real economic growth.']}/>
     </div>
     
   </div>

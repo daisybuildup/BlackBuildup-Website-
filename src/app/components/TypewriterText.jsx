@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
  const TypewriterText = ({text}) => {
   return (
-     <p className='text-white md:text-[18px]'><Typewriter
+     <p className='text-white md:text-[18px] md:w-[62%] w-[90%]'><Typewriter
         words={text}
         loop={1} // only once
         cursor={false} // no blinking cursor

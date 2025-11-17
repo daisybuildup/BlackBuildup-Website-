@@ -11,7 +11,7 @@ const footer = () => {
    <footer className='w-full xl:px-10 px-4 md:px-7  '>
     <div className=' grid   grid-cols-1  md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 2xl:grid-cols-4 gap-6 lg:gap-8 xl:gap-12 mt-[70px]  justify-center items-start  text-[#4B5564]'>
        <div className=' h-auto '>
-         <Image src='/blackbuildup.png' alt='logo'width={190} height={90} className='md:w-[190px] md:h-[90px] w-[125px] h-[60px]'/>
+           <Image src='/blackbuildup.png' alt='logo'width={144} height={74} className='md:w-[144px] md:h-[74px] w-[120px] h-[60px]'/>
          {/*<Image src='/cclclogo.svg' alt='logo'width={160} height={64} className='md:w-[160px] md:h-[60px] w-[120px] h-[50px]'/>*/}
          <p className='pt-3 h-auto'>Empowering the next generation of leaders to create positive change in their communities and beyond. Join thousands of youth making a difference across Canada</p>
         </div>

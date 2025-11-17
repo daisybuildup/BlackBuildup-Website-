@@ -56,7 +56,7 @@ const TransformativeProgram = () => {
       {programs.map((program) => (
         <div
           key={program.id}
-          className="w-[340px] md:w-[459px] h-full py-8 px-6 border-2 border-t-16 rounded-[12px] bg-white flex flex-col justify-between border-t-[#0F4082] border-[#E5E7EB]"
+          className="w-[340px] md:w-[380px] h-full py-8 px-6 border-2 border-t-16 rounded-[12px] bg-white flex flex-col justify-between border-t-[#0F4082] border-[#E5E7EB]"
         >
           <div>
             <h1 className="font-bold text-2xl text-[#0F4082] text-left">{program.title}</h1>

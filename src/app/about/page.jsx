@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Achievement from '../components/Achievement'
 import Leadership from '../components/Leadership'
 import TypewriterText from '../components/TypewriterText'
-import  Review  from '../components/review'
+//import  Review  from '../components/review'
 
 
 const Page = () => {
@@ -29,7 +29,7 @@ const Page = () => {
   ];
   return (
     <>
-   <div className="relative md:h-[70vh] h-[60vh] bg-[url('/about.jpg')] bg-cover bg-center">
+   <div className="relative md:h-[100vh] h-[60vh] bg-[url('/blackgroup.jpg')] bg-cover bg-center">
     {/* Overlay */}
     <div className="absolute inset-0 bg-[#0F4082]/50"></div>
 
@@ -39,6 +39,11 @@ const Page = () => {
        <TypewriterText text={["Discover our mission, vision, impact, and leadship"]}/>
     </div>
   </div>
+   <section className='bg-[#0F4082] w-full flex flex-col justify-center items-center py-10 px-5 md:px-16'>
+<h1 className='text-white font-bold lg:text-[40px] text-[30px]'>Our Story</h1>
+<p className='xl:max-w-[65%] pt-4 pb-11 text-white text-center'>Founded to address systemic barriers for Black entrepreneurs in BC, Black Buildup has grown into a trusted leader with deep partnerships and a strong provincial footprint. We’ve supported thousands of entrepreneurs, co-delivered major summits and exhibits like the ACBC Summits and BWBN Women's Business Exhibits, and facilitated workshops for partners from the SBCCI to the FACE Coalition. Our work has mobilized a new generation of Black entrepreneurs, professionals, and ecosystem builders.
+Our Leadership</p>
+  </section>
   <section className="flex justify-center md:flex-row flex-col items-center gap-6 py-18 px-6 md:px-16 bg-[#F5F6FA]">
     <div className='max-w-[650px] min-h-[250px] py-8 px-6 flex flex-col gap-6 bg-white text-[#4B5564] rounded-xl'>
       <div className='flex justify-start items-center gap-7 ' >
@@ -58,9 +63,9 @@ const Page = () => {
     
   </section>
 
-<section className='bg-[#E6E6E6]/25 w-full flex flex-col justify-center items-center py-10  px-5 md:px-16'>
-   <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Our Leadership</h1>
-   <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>A 100% Black-Identified Team Rooted in BC's Landscape</p>
+<section className='bg-[#E6E6E6]/25 w-full flex flex-col justify-center items-center py-12  px-5 md:px-16'>
+   <h1 className='text-white  text-center  bg-[#0F4082] px-2.5 py-[9.5px] rounded-full'>Our Leadership</h1>
+   <p className='xl:max-w-[58%] pt-4 pb-11 text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>A 100% Black-Identified Team Rooted in BC's Landscape</p>
 <Leadership/>
 </section>
 
@@ -71,11 +76,9 @@ const Page = () => {
 </section>
 
   <section className='bg-white w-full flex flex-col justify-center items-center py-10 px-5 md:px-16'>
-{/*<h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[30px]'>Our Journey</h1>
-<Image alt='journey' src='/journey.svg' width={1100} height={400} className=' w-100% h-auto mt-9'/>*/}
-<h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[30px]'>Our Story</h1>
-<p className='xl:max-w-[65%] pt-4 pb-11 text-[#4B5564] text-center'>Founded to address systemic barriers for Black entrepreneurs in BC, Black Buildup has grown into a trusted leader with deep partnerships and a strong provincial footprint. We’ve supported thousands of entrepreneurs, co-delivered major summits and exhibits like the ACBC Summits and BWBN Women's Business Exhibits, and facilitated workshops for partners from the SBCCI to the FACE Coalition. Our work has mobilized a new generation of Black entrepreneurs, professionals, and ecosystem builders.
-Our Leadership</p>
+<h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[30px]'>Our Journey</h1>
+<Image alt='journey' src='/journey.svg' width={1100} height={400} className=' w-100% h-auto mt-9'/>
+
   </section>
 
   <section className='bg-[#F5F6FA] w-full flex flex-col justify-center items-center py-18  px-5 md:px-16'>
@@ -130,11 +133,11 @@ Our Leadership</p>
 <button className='py-3 px-3.5 bg-[#0F4082] rounded-xl font-medium mt-6'>Become a Partner</button>
   </section>
 
-   <section className='bg-white w-full flex flex-col justify-center items-center pt-18 pb-13  px-5 md:px-16'>
+   {/* <section className='bg-white w-full flex flex-col justify-center items-center pt-18 pb-13  px-5 md:px-16'>
     <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Stories & Testimonials</h1>
     <p className='xl:max-w-[58%] pt-4 pb-11 text-[#4B5564] text-center'>Ready to make a difference? Explore career opportunities and become part of a team dedicated to empowering youth and transforming communities.</p>
-    <Review />
-   </section>
+   <Review />
+   </section>*/}
    <section className='bg-[#0F4082] w-full flex flex-col justify-center items-center py-18  px-5 md:px-16'>
       <p className='xl:max-w-[40%] pt-4 text-white text-center'>Join us in empowering the next generation of Canadian leaders.
 Together, we can build stronger communities nationwide.</p>

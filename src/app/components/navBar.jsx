@@ -15,7 +15,7 @@ const [isSignOpen, setIsSignOpen] = useState(false);
 
       <div className="  w-[70%] flex justify-between items-left flex-col  min-h-screen bg-[#1e1c1c] z-1000">
         <div className="flex items-center justify-between py-5 px-[30px]">
-             <Link href="/" onClick={handleToggleOff} >{/*<Image src="/cclclogo.svg" alt="cclc logo" width={120} height={60} className=""  />*/} <Image src='/blackbuildup.png' alt='logo'width={190} height={90} className='md:w-[190px] md:h-[90px] w-[125px] h-[60px]'/></Link>
+             <Link href="/" onClick={handleToggleOff} >{/*<Image src="/cclclogo.svg" alt="cclc logo" width={120} height={60} className=""  />*/}    <Image src='/blackbuildup.png' alt='logo'width={144} height={74} className='md:w-[144px] md:h-[74px] w-[120px] h-[60px]'/></Link>
           <div className="flex items-center justify-center w-8 h-8 rounded-full bg-white/20">
   <FaTimes className="text-[#ffff]" size={20} onClick={handleToggleOff}  />
 </div>
@@ -25,7 +25,7 @@ const [isSignOpen, setIsSignOpen] = useState(false);
         <div className="flex flex-col gap-[30px] mt-[-200px] px-10">
           <Link href="/about" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">About Us</Link>
           <Link href="/program" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Programs</Link>
-          <Link href="/partnership" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Partnership</Link>
+          <Link href="/projects-and-impacts" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Projects & Impacts</Link>
           <Link href="/news-and-events" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">News and Events</Link>
           <p  className="text-white text-[18px] font-semibold" onClick={() => setIsSignOpen(true)}>Sign In</p>
           <Link href="/" onClick={handleToggleOff} className="text-white text-[18px] font-semibold">Donate</Link>

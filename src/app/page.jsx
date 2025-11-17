@@ -4,7 +4,7 @@ import Image from "next/image";
 import Header from "./components/header";
 import React from "react";
 import GetInvolvedSection, { ModalCardSection, CohortCardSection } from './components/HomeClient';
-import ProgramCard from "./components/programCard";
+//import ProgramCard from "./components/programCard";
 import PillarCard from "./components/pillarCard";
 import Footer from "./components/footer";
 import Review from "./components/review";
@@ -27,7 +27,7 @@ const impacts = [
    
      <section className='xl:grid-cols-2 grid justify-between items-center pt-[150px] px-5 mx-auto md:mx-11 gap-5 xl:gap-[270px]'>
       <div className=' flex flex-col justify-center xl:items-start items-center '>
-      <h2 className=' text-[#0F4082] md:text-[20px] text-[14px] bg-[#edf0fc] xl:text-left text-center  font-medium rounded-2xl xl:w-[411px]  px-2.5 py-2.5'>Empowering Communities Since 2020 </h2>
+      {/*<h2 className=' text-[#0F4082] md:text-[20px] text-[14px] bg-[#edf0fc] xl:text-left text-center  font-medium rounded-2xl xl:w-[411px]  px-2.5 py-2.5'>Empowering Communities Since 2020 </h2>*/}
       <h1 className=' lg:text-[40px] text-[#AD8E63] md:w-[85%] xl:text-left text-center xl:w-full mt-4   md:mt-6 md:text-[30px]  text-[20px] font-bold'>Empowering <span className='text-[#333333]'>Black Entrepreneurs.</span> Building <span className="text-[#333333]">Resilient</span> Communities <span className="text-[#333333]">in BC and Beyond.</span></h1>
       <p className='text-[#4B5564] md:text-lg  text-base text-center w-[90%] xl:w-full xl:text-left mt-6'>As a Black-led ecosystem organization, Black Buildup advances inclusive business growth for Black-owned and Black-serving ventures across British Columbia and Western Canada. We provide culturally responsive training, mentorship, strategic partnerships, and access to capital—helping entrepreneurs thrive while fostering economic empowerment and community strength.</p>
       <div className='flex justify-center flex-wrap md:flex-nowrap xl:justify-start items-center gap-6 mt-6'>
@@ -52,17 +52,17 @@ const impacts = [
       </div>
      </section>
      <section className=' md:px-11 px-5  py-[72px] mt-[72px] w-full h-auto bg-[#0F4082] text-white flex flex-col justify-center items-center'>
-      <h2 className='p-2.5 bg-[#F5F6FA] rounded-full font-medium text-[#0F4082]'>What we do</h2>
-      <h1 className="lg:text-[40px] text-center text-[20px] md:text-[30px] font-semibold pt-6">Building Western Canada's Strongest Black Entrepreneurship Ecosystem</h1>
-      <p className='text-lg mt-3.5 text-white/70 text-center md:max-w-[65%]'>Through targeted programs and deep collaboration, we address systemic barriers and create lasting economic change. Together with our consortium of partners, we've achieved:</p>
-      <ProgramCard/>
+      <h2 className='p-2.5 bg-[#F5F6FA] rounded-full font-medium text-[#0F4082]'>Our Mission</h2>
+      <h1 className="lg:text-[40px] text-center text-[20px] md:text-[30px] font-semibold pt-6">Building Stronger Communities Through Leadership</h1>
+      <p className='text-lg mt-3.5 text-white/70 text-center md:max-w-[65%]'>Our impact speaks for itself. Join thousands of leaders who are making a difference in their communities.</p>
+      {/*<ProgramCard/>*/}
       
       {/* Modal Section */}
   <ModalCardSection/>
      </section>
      <section className='md:px-11 w-full h-auto py-[72px] bg-[#ffffff] text-black flex flex-col justify-center items-center'>
       <h2 className=' py-2.5 px-2.5 bg-[#edf0fc] text-center shadow-sm text-[#0F4082] font-medium rounded-full'>Our Pillars Of Work</h2>
-      <h1 className='text-[#0F4082] font-semibold lg:text-[40px] text-[30px] text-center pt-6 pb-4'>Our Four Pillars</h1>
+      <h1 className='text-[#0F4082] font-semibold lg:text-[40px] text-[30px] text-center pt-6 pb-4'>Our Pillars</h1>
       <p className='text-[#4B5564] text-[18px] pb-9 text-center w-[95%] lg:w-[70%] xl:w-[60%] '>Everything we do is built on these four foundational pillars that guide our mission to empower communities and shape leaders across Canada</p>
       <PillarCard/>
      </section>
