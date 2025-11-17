@@ -47,7 +47,7 @@ const PModalCard = ({ modal, setIsOpenProp }) => {
   );
 };
 
-// Main component
+// Main component for the transformative program
 const TransformativeProgram = () => {
   const [tProgram, settProgram] = useState(null);
 
