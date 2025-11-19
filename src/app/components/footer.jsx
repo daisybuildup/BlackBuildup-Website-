@@ -11,16 +11,16 @@ const footer = () => {
    <footer className='w-full xl:px-10 px-4 md:px-7  '>
     <div className=' grid   grid-cols-1  md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 2xl:grid-cols-4 gap-6 lg:gap-8 xl:gap-12 mt-[70px]  justify-center items-start  text-[#4B5564]'>
        <div className=' h-auto '>
-           <Image src='/blackbuildup.png' alt='logo'width={144} height={74} className='md:w-[144px] md:h-[74px] w-[120px] h-[60px]'/>
+           <Image src='/blackbuildup.png' alt='logo'width={144} height={74} className='md:w-[144px] md:h-[64px] w-[120px] h-[60px] object-cover'/>
          {/*<Image src='/cclclogo.svg' alt='logo'width={160} height={64} className='md:w-[160px] md:h-[60px] w-[120px] h-[50px]'/>*/}
          <p className='pt-3 h-auto'>Empowering the next generation of leaders to create positive change in their communities and beyond. Join thousands of youth making a difference across Canada</p>
         </div>
         <div className='  h-auto'>
             <h1 className='font-semibold text-[#0F4082] text-[18px]'>Programs</h1>
             <ul className="pt-4 flex flex-col gap-4">
-            <li>Entrepreneurship & growth</li>
-            <li>Ecosystem & Partnerships</li>
-            <li>Communities & Leaderships</li>
+            <li><Link href='/program/entrepreneurship-and-growth'>Entrepreneurship & growth</Link></li>
+            <li><Link href='/program/ecosystem-amplification'>Ecosystem & Partnerships</Link></li>
+            <li><Link href='/program/community-leadership-initiatives'>Communities & Leaderships</Link></li>
             </ul>
         </div>
         {/*

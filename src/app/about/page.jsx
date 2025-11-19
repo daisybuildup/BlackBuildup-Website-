@@ -29,13 +29,13 @@ const Page = () => {
   ];
   return (
     <>
-   <div className="relative md:h-[100vh] h-[60vh] bg-[url('/blackgroup.jpg')] bg-cover bg-center">
+   <div className="relative xl:h-[100vh] h-[60vh] bg-[url('/blackgroup.jpg')] bg-cover bg-center">
     {/* Overlay */}
     <div className="absolute inset-0 bg-[#0F4082]/50"></div>
 
     {/* Content */}
     <div className="relative flex flex-col text-center px-5 items-center justify-center h-full">
-      <h1 className="text-white md:text-4xl text-[30px] font-bold">About Us</h1>
+      <h1 className="text-white lg:text-4xl text-[18px] md:text-2xl font-bold">About Us</h1>
        <TypewriterText text={["Discover our mission, vision, impact, and leadship"]}/>
     </div>
   </div>

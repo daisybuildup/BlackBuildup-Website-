@@ -3,7 +3,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 
 export const metadata = {
-  title: "Advocacy | CCLC",
+  title: "Advocacy | Blackbuildup",
   description: "CCLC advocacy page",
 };
 

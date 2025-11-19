@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 
 export const metadata = {
-  title: "About | CCLC",
+  title: "About | Blackbuildup",
   description: "CCLC about page",
 };
 

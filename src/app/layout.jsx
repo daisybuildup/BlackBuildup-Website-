@@ -4,7 +4,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Home | CCLC",
+  title: "Home | Blackbuildup",
   description: "CCLC homepage",
 };
 

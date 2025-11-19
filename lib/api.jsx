@@ -1,3 +1,4 @@
+//import { Component } from "react";
 import {client} from "./contentful";
 
 export const revalidate = 60; // revalidate every 60 seconds
@@ -39,41 +40,61 @@ export async function getTeams() {
 
 
 
-export async function getPrograms() {
-  const res = await client.getEntries({ content_type: 'program' });
+
+
+export async function getEcosystem() {
+    const res = await client.getEntries({
+    content_type: "ecosystem",
+  });
+  
 
   return res.items.map((item) => ({
     id: item.sys.id,
-    category: item.fields.category,
     title: item.fields.title,
+    goal: item.fields.goal,
+    subcomponents: item.fields.subcomponents || [],
     subtext: item.fields.subtext,
+    components: item.fields.components || [],
     description: item.fields.description,
-    svg: item.fields.svg?.fields?.file?.url
-      ? `https:${item.fields.svg.fields.file.url}`
-      : null,
-    duration: item.fields.duration,
-    classSize: item.fields.classSize,
-    prerequisites: item.fields.prerequisites || [],
-    achievements: item.fields.achievements || [],
 
-    testimonials: Array.isArray(item.fields.testimonials)
-  ? item.fields.testimonials.map((item) => ({
-      name: item.fields.name,
-      comment: item.fields.comment,
-      image: item.fields.image?.fields?.file?.url
-  ? `https:${item.fields.image.fields.file.url}`
-  : ''
-    }))
-  : item.fields.testimonials
-  ? [{
-      name: item.fields.testimonials.fields.name,
-      comment: item.fields.testimonials.fields.comment,
-     image: item.fields.testimonials.fields.image.fields.file.url
-  ? `https:${item.fields.testimonials.fields.image.fields.file.url}`
-  : ''
-    }]
-  : [],
-
+    
   }));
 }
 
+export async function getEntrepreneurship() {
+    const res = await client.getEntries({
+    content_type: "entrepreneurship",
+  });
+  
+
+  return res.items.map((item) => ({
+    id: item.sys.id,
+    title: item.fields.title,
+    goal: item.fields.goal,
+    subcomponents: item.fields.subcomponents || [],
+    subtext: item.fields.subtext,
+    components: item.fields.components || [],
+    description: item.fields.description,
+
+    
+  }));
+}
+
+export async function getCommunity() {
+    const res = await client.getEntries({
+    content_type: "community",
+  });
+  
+
+  return res.items.map((item) => ({
+    id: item.sys.id,
+    title: item.fields.title,
+    goal: item.fields.goal,
+    subcomponents: item.fields.subcomponents || [],
+    subtext: item.fields.subtext,
+    components: item.fields.components || [],
+    description: item.fields.description,
+
+    
+  }));
+}
