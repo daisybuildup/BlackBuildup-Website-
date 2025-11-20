@@ -14,7 +14,7 @@ const layout = ({children}) => {
   return (
     <div className=' max-w-380 mx-auto min-h-screen'>
         <Header/>
-          <div className="relative xl:h-[100vh] h-[75vh] bg-[url('/programbg.jpg')] bg-cover bg-center">
+          <div className="relative xl:h-[100vh] h-[75vh] bg-[url('/blackbuildprogram.jpg')] bg-cover bg-center">
     {/* Overlay */}
     <div className="absolute inset-0 bg-[#0F4082]/50"></div>
 
