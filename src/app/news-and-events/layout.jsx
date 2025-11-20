@@ -3,8 +3,8 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 
 export const metadata = {
-  title: "Contact | Blackbuildup",
-  description: "CCLC contact page",
+  title: "News and Events | Blackbuildup",
+  description: "Blackbuildup contact page",
 };
 
 const layout = ({children}) => {

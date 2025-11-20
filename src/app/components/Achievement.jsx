@@ -34,7 +34,7 @@ const Achievement = () => {
     },
     {
         img: '/award.svg',    
-        value: 6,
+        value: 8,
         text: "Provinces Served",
         subtext: "Coast to coast impact"
     },

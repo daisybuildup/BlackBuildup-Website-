@@ -2,8 +2,11 @@ import React from 'react'
 import TypewriterText from '../components/TypewriterText'
 import ButtonDiv from './component/ButtonDiv'
 import Project from './component/Project'
+import FeaturedProject from './component/FeaturedProject'
+import FeaturedProjectClient from './component/FeaturedProjectClient'
 const page = () => {
-  
+
+   
   return (
     <>
     <div className="relative xl:h-[100vh] h-[60vh] bg-[url('/pandi.jpg')] bg-cover bg-center">
@@ -16,6 +19,10 @@ const page = () => {
           <TypewriterText text={["Creating lasting impact through collaboration and innovation"]}/>
        </div>
      </div>
+     <section className='bg-white  px-5 md:px-16 py-12 ' >
+        <FeaturedProject/>
+
+     </section>
      <section className='bg-[#F5F6FA] py-18 px-5 md:px-16 '>
       
        <Project/>

@@ -115,3 +115,28 @@ export async function getProject() {
      
   }));
 }
+
+
+export async function getFeaturedProject() {
+  const res = await client.getEntries({
+    content_type: "featuredproject",
+    include: 2
+  });
+
+    return res.items.map((item) => ( {
+    tag: item.fields.tag,
+    title: item.fields.title,
+    subtitle: item.fields.subtitle,
+    description: item.fields.description,
+    timeline: item.fields.timeline,
+    highlight: item.fields.highlight,
+    impact: item.fields.impact,
+    stats: item.fields.stats?.map(stat => ({
+      icon: stat.fields.icon?.fields.file.url
+        ? `https:${stat.fields.icon.fields.file.url}`
+        : null,
+      value: stat.fields.value,
+      label: stat.fields.label
+    })) || []
+  }));
+}

@@ -7,7 +7,7 @@ import ButtonDiv from './component/ButtonDiv'
 
 export const metadata = {
   title: "Programs | Blackbuildup",
-  description: "CCLC program page",
+  description: "Blackbuildup program page",
 };
 
 const layout = ({children}) => {

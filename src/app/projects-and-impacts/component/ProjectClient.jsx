@@ -3,34 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 
 const ProjectClient = ({projects}) => {
-  {/*  const projects = [
-    {
-      title: "WORBE Project", 
-      category:'Partnership Initiatives', 
-      timeline: "March 2024 - Present",
-      description:"The WORBE Project aims at improving the representation of persons of African descent or who identify as black in the Banking, Finance and Tech sectors in Alberta and British Columbia. Increasing representation is important for sustainable growth and innovation. However, significant disparities in the representation persist for Black and racialized individuals in Alberta and British Columbia's banking and finance sectors. Underrepresentation in banking and finance can have wide range of impacts as lack of diversity stifles creativity, innovation, access and knowledge to underserved communities ultimately hindering progress and corporate growth.",
-      impact: ["AB & BC sectors across provinces","Banking Finance & Tech focus areas"]
-    },
-  {
-      title: "Canada Learning Bond", 
-      category:'Education & Awareness', 
-      timeline:' 2022-2023', 
-      description:"The Canada Learning Bond (CLB) is a government-sponsored educational savings incentive that provides children from low-income families born from 2004 onwards with financial support for post-secondary education. The purpose of the CLB is to encourage and reinforce the importance of savings for a child's post-secondary education through a Registered Education Savings Plan (RESP). Eligible children from low-income families can receive an initial $500 and $100 for each year of eligibility until they turn 15, for a maximum total value of $2,000.",
-      impact: ["$2,000 maximum bond value per child", "2004+ children born onwards eligible","$500 initial bond amount"]
-    },
-    {
-      title: "Youth Leadership Development Program", 
-      category:'Community Empowerment', 
-      description:"A comprehensive leadership program connecting young people with mentors and providing skills training for community leadership.",
-      impact: ["150+ youth participants enrolled", "95% program completion rate"]
-    },
-    {
-      title: "Community Health & Wellness Initiative", 
-      category:'Community Empowerment', 
-      description:"Providing accessible health education, screening services, and wellness resources to improve community health outcomes.",
-      impact: ["500+ families served annually", "12 health workshops conducted"]
-    },
-  ]*/}
+ 
 
   // Modal component
 const PModalCard = ({ modal, setIsOpenProp }) => {

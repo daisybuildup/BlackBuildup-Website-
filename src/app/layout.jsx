@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Home | Blackbuildup",
-  description: "CCLC homepage",
+  description: "Blackbuildup homepage",
 };
 
 export default function RootLayout({ children }) {

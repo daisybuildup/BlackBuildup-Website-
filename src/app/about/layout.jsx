@@ -5,7 +5,7 @@ import Footer from '../components/footer'
 
 export const metadata = {
   title: "About | Blackbuildup",
-  description: "CCLC about page",
+  description: "Blackbuildup about page",
 };
 
 const layout = ({children}) => {
