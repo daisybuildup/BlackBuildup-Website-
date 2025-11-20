@@ -87,13 +87,13 @@
     id: "entrepreneurship",
     title: "Entrepreneurship",
     summary:
-      "the program supports Black Canadians from pre-launch to established growth by offering both foundational knowledge for new ventures and specialized guidance for accelerating existing ventures.This mission is achieved through a dual-pronged approach: Enabling New Ventures (Start-ups) and Accelerating Existing Small Businesses (Growth)",
+      "the program supports Black Canadians from pre-launch to established growth by offering both foundational knowledge for new ventures and specialized guidance for accelerating existing ventures.",
     highlights: ['Business Establishment & Operations', 
 'Business Growth & Performance',
 'Personal & Professional Development',
 'Transition & Empowerment',
     ],
-    description:'Develop the skills and knowledge needed to be an effective advocate for social justice and cultural understanding in your community.',
+    description:' the program supports Black Canadians from pre-launch to established growth by offering both foundational knowledge for new ventures and specialized guidance for accelerating existing ventures. This mission is achieved through a dual-pronged approach: Enabling New Ventures (Start-ups) and Accelerating Existing Small Businesses (Growth)',
 
     details: [
       'Business Establishment & Operations', 
