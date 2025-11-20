@@ -1,7 +1,9 @@
 import React from 'react'
 import TypewriterText from '../components/TypewriterText'
 import ButtonDiv from './component/ButtonDiv'
+import ProjectClient from './component/ProjectClient'
 const page = () => {
+  
   return (
     <>
     <div className="relative xl:h-[100vh] h-[60vh] bg-[url('/pandi.jpg')] bg-cover bg-center">
@@ -14,6 +16,10 @@ const page = () => {
           <TypewriterText text={["Creating lasting impact through collaboration and innovation"]}/>
        </div>
      </div>
+     <section className='bg-[#F5F6FA] py-18 px-5 md:px-16 '>
+      
+       <ProjectClient/>
+     </section>
      <div className='bg-white py-18 text-center flex flex-col justify-center items-center px-5 md:px-16'>
       <h1 className='  pb-4 text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Impact Through Collaboration</h1>
       <p className='text-[#4B5564] text-lg md:w-[90%] xl:w-[65%]'>“Together with our partners, we’ve mobilized <span className='font-semibold text-[#0F4082]'>$8 million</span> for ecosystem development, empowered <span className='font-semibold text-[#0F4082]'>3,000+ entrepreneurs,</span> and organized BC’s only <span className='font-semibold text-[#0F4082]'>Black-led Women Business Exhibit</span>”</p>
