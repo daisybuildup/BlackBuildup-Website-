@@ -65,7 +65,7 @@ const [projectModal, setProjectModal] = useState(null);
             <div className='grid xl:grid-cols-3 gap-6 w-full mt-6 '>
             {
             project.stats.map((stat, index) => (
-              <div key={index} className='flex flex-col items-center border-2 rounded-2xl py-8 border-[#E5E7EB] gap-4 mt-4'>
+              <div key={index} className='flex flex-col items-center border-2 rounded-2xl py-8 px-2 border-[#E5E7EB] gap-4 mt-4'>
                 <img src={stat.icon} alt={stat.label} width={40} height={40} /> 
                 
                   <h3 className='text-[#0F4082] font-bold md:text-[40px] text-[20px] '>{stat.value}</h3>
@@ -75,7 +75,7 @@ const [projectModal, setProjectModal] = useState(null);
             ))
           }
           </div>
-           <button className='mt-6 text-white font-semibold bg-[#0F4082]  rounded-2xl py-3 mx-auto  hover:bg-[#0a3976] w-[20%] cursor-pointer' onClick={()=>setProjectModal(project)}>Read More</button>
+           <button className='mt-6 text-white font-semibold bg-[#0F4082]  rounded-2xl py-3 mx-auto  hover:bg-[#0a3976] w-[90%] md:w-[20%] cursor-pointer' onClick={()=>setProjectModal(project)}>Read More</button>
           </div>
         ))} 
         {projectModal && <PModalCard modal={projectModal} setIsOpenProp={setProjectModal} />}
