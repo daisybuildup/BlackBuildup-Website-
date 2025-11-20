@@ -19,12 +19,11 @@ const Page = () => {
   ]
 
   const partners = [
-    { name: 'BMO Canada', logo: '/utoronto.png' },
-    { name: 'WeBC', logo: '/canadagov.png' },
-    { name: 'EDC', logo: '/belllogo.png' },
-    { name: 'WAGE', logo: '/unitedway.png' },
-    { name: 'FACE', logo: '/rbcfoundation.png' },
-    { name: 'FFBC', logo: '/mcgill.png' },
+    { name: 'BMO Canada', logo: '/bmo.jpg' },
+    { name: 'WeBC', logo: '/webc.jpg' },
+    { name: 'WAGE', logo: '/wagec.png' },
+    { name: 'FACE', logo: '/face.jpg' },
+    { name: 'Canadian Heritage', logo: '/canher.jpg' },
    
   ];
   return (
@@ -103,7 +102,7 @@ Our Leadership</p>
     </div>
       <div
   className="grid gap-6 px-6 lg:px-4 xl:px-16 
-             sm:grid-cols-1 md:grid-cols-3  xl:grid-cols-6 
+             sm:grid-cols-1 md:grid-cols-3  xl:grid-cols-5 
              pb-[35px] pt-[35px] rounded-xl bg-white mt-8"
 >
   {partners.map((partner, index) => (
