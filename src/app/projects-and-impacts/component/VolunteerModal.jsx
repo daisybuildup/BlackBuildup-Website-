@@ -25,7 +25,7 @@ const VolunteerModal = ({setIsOpenProp}) => {
       );
   
       // mailto link (opens Gmail or default email app)
-      window.location.href = `mailto:victoradesola8@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:info@blackbuildup.com?subject=${subject}&body=${body}`;
     
   
       // Show a quick toast popup

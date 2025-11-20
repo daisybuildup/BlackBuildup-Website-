@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import ModalCard from "./modalCard";
-import Image from "next/image";
+//import ModalCard from "./modalCard";
+//import Image from "next/image";
 
 const PillarCard = () => {
-  const [selectedModal, setSelectedModal] = useState(null);
+  //const [selectedModal, setSelectedModal] = useState(null);
 
   const Pillars =[ {
       img: "/emoji.svg",
@@ -72,8 +72,8 @@ const PillarCard = () => {
     },
     {
       img: "/profile.svg",
-      title: "Get Involved",
-      text: "Volunteer, donate, or join to create change.",
+      title: "Research and data",
+      text: "Measure the impact of your interventions by generating, ananlyzing, and applying high-quality data specifically relevant to Black Canadian entrepreneurs in BC and Western Canada.",
       modal: {
         titleone: "Community Engagement Opportunities",
         textone:
@@ -112,20 +112,20 @@ const PillarCard = () => {
             flex flex-col justify-between items-center
             w-full max-w-[330px] h-full
             px-6 py-8
-            rounded-[12px] border-2 border-[#AD8E63]
+            rounded-[12px] border-2 border-[#E5E7EB]
           "
         >
           {/* Top content */}
           <div className="flex flex-col items-center text-center flex-grow">
-            <Image src={pillar.img} alt={pillar.title} width={56} height={56} />
-            <h2 className="text-[#474765] font-bold text-[24px] mt-3">
+            
+            <h2 className="text-[#0F4082] font-bold text-[24px] mt-3">
               {pillar.title}
             </h2>
             <p className="text-[#4B5564] text-[16px] mt-3.5">{pillar.text}</p>
           </div>
 
           {/* Button always aligned at bottom */}
-          <button
+          {/*<button
             className="
               mt-6 px-6 py-3 border border-[#0F4082] text-[#0F4082]
               rounded-2xl hover:bg-[#0f4082] hover:text-white
@@ -134,16 +134,16 @@ const PillarCard = () => {
             onClick={() => setSelectedModal(pillar.modal)}
           >
             Learn more
-          </button>
+          </button>*/}
         </div>
       ))}
 
-      {selectedModal && (
+      {/*{selectedModal && (
         <ModalCard
           modal={selectedModal}
           setIsOpenProp={() => setSelectedModal(null)}
         />
-      )}
+      )}*/}
     </div>
   );
 };

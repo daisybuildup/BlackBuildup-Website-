@@ -52,11 +52,11 @@ const TransformativeProgram = () => {
   const [tProgram, settProgram] = useState(null);
 
   return (
-    <div className="pt-10 grid gap-6 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
+    <div className="pt-10 grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4  md:px-5 lg:px-20  px-5">
       {programs.map((program) => (
         <div
           key={program.id}
-          className="w-[340px] md:w-[380px] h-full py-8 px-6 border-2 border-t-16 rounded-[12px] bg-white flex flex-col justify-between border-t-[#0F4082] border-[#E5E7EB]"
+          className=" md:max-w-[380px] h-full py-8 px-6 border-2 border-t-16 rounded-[12px] bg-white flex flex-col justify-between border-t-[#0F4082] border-[#E5E7EB]"
         >
           <div>
             <h1 className="font-bold text-2xl text-[#0F4082] text-left">{program.title}</h1>
