@@ -98,3 +98,20 @@ export async function getCommunity() {
     
   }));
 }
+
+export async function getProject() {
+    const res = await client.getEntries({
+    content_type: "projects",
+  });
+  
+
+  return res.items.map((item) => ({
+    id: item.sys.id,
+    title: item.fields.title,
+    category: item.fields.category,
+    timeline: item.fields.timeline,
+    description: item.fields.description,
+    impact: item.fields.impact || [],
+     
+  }));
+}

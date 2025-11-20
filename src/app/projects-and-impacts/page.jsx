@@ -1,7 +1,7 @@
 import React from 'react'
 import TypewriterText from '../components/TypewriterText'
 import ButtonDiv from './component/ButtonDiv'
-import ProjectClient from './component/ProjectClient'
+import Project from './component/Project'
 const page = () => {
   
   return (
@@ -18,7 +18,7 @@ const page = () => {
      </div>
      <section className='bg-[#F5F6FA] py-18 px-5 md:px-16 '>
       
-       <ProjectClient/>
+       <Project/>
      </section>
      <div className='bg-white py-18 text-center flex flex-col justify-center items-center px-5 md:px-16'>
       <h1 className='  pb-4 text-[#0F4082] font-bold lg:text-[40px] text-center text-[30px]'>Impact Through Collaboration</h1>

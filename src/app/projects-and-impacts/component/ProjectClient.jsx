@@ -2,8 +2,8 @@
 import React from 'react'
 import { useState } from 'react'
 
-const ProjectClient = () => {
-    const projects = [
+const ProjectClient = ({projects}) => {
+  {/*  const projects = [
     {
       title: "WORBE Project", 
       category:'Partnership Initiatives', 
@@ -30,7 +30,7 @@ const ProjectClient = () => {
       description:"Providing accessible health education, screening services, and wellness resources to improve community health outcomes.",
       impact: ["500+ families served annually", "12 health workshops conducted"]
     },
-  ]
+  ]*/}
 
   // Modal component
 const PModalCard = ({ modal, setIsOpenProp }) => {
