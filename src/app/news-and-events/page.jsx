@@ -11,7 +11,7 @@ const page = () => {
         
             {/* Content */}
             <div className="relative flex flex-col text-center px-5 items-center justify-center h-full">
-              <h1 className="text-white lg:text-4xl text-[18px] md:text-2xl pb-4 font-bold">Collaboration is the Hear of Our Impact</h1>
+              <h1 className="text-white lg:text-4xl text-[18px] md:text-2xl font-bold mt-15 md:pb-4 pb-2 md:w-[55%] text-center">Collaboration is the Heart of Our Impact</h1>
                <TypewriterText text={["Our consortium model amplifies our reach and deep our impact. We with ecosystem builders, community organisations, and national allies to create a thriving environment for Black entrepreneurs in BC and beyond."]}/>
              
             </div>

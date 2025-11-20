@@ -138,7 +138,7 @@ const impacts = [
     <h1 className='md:text-[40px] text-white text-[30px] font-bold'>Ready to Make Your Impact?</h1>
     <p className='pt-4 pb-8 text-white/70'>Your community needs leaders like you. Take the first toward creating the change you want to see in the <br/>word.</p>
     <div className='flex gap-6'>
-      <button className="bg-[#E5E7EBF6] text-[#0F4082] py-3 cursor-pointer hover:bg-blue-200 px-[35px] font-medium rounded-2xl">Join Our Community</button>
+     
       <Link href='/program'><button className="bg-[#E5E7EBF6] text-[#0F4082] py-3 cursor-pointer hover:bg-blue-200 px-[35px] font-medium rounded-2xl">Explore Programs</button></Link>
     </div>
     <div className='flex justify-center mt-14  gap-2.5 md:gap-[84px] items-start md:items-center'>

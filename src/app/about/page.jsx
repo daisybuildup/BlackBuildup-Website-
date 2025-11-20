@@ -140,10 +140,10 @@ Our Leadership</p>
    <section className='bg-[#0F4082] w-full flex flex-col justify-center items-center py-18  px-5 md:px-16'>
       <p className='xl:max-w-[40%] pt-4 text-white text-center'>Join us in empowering the next generation of Canadian leaders.
 Together, we can build stronger communities nationwide.</p>
-<div className='flex justify-center md:flex-row flex-col items-center gap-6 mt-8'>
+{/*<div className='flex justify-center md:flex-row flex-col items-center gap-6 mt-8'>
       <button className='py-3 px-16 bg-[#AD8E63] rounded-xl font-medium  cursor-pointer text-white'>Get Involved</button>
       <button className='py-3 px-16 border bg-[#E5E7EBF6] rounded-xl font-medium  cursor-pointer text-[#0F4082]'>Learn More</button>
-      </div>
+      </div>*/}
    </section>
   </>
   )
