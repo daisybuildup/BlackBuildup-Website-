@@ -1,13 +1,13 @@
 import React from "react";
 
-{/*const ModalCard = ({ modal, setIsOpenProp }) => {
+const ModalCard = ({ modal, setIsOpenProp }) => {
   return (
     <div
       className="fixed  inset-0 w-full h-full bg-black/70 flex justify-center items-center z-[1000] px-6"
       onClick={() => setIsOpenProp(false)} // click background to close
-    >/*}
+    >
       {/* Modal content */}
-      {/*<div
+      <div
         className="text-[#4B5564] rounded-[12px] bg-white py-6 px-4 sm:py-8 sm:px-6 
                    w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl 
                    max-h-[70vh] md:max-h-[85vh] overflow-y-auto scrollbar-hide
@@ -40,4 +40,4 @@ import React from "react";
   );
 };
 
-export default ModalCard;*/}
+export default ModalCard;
