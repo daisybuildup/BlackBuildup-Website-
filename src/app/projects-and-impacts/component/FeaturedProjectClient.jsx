@@ -68,8 +68,8 @@ const [projectModal, setProjectModal] = useState(null);
               <div key={index} className='flex flex-col items-center border-2 rounded-2xl py-8 px-2 border-[#E5E7EB] gap-4 mt-4'>
                 <img src={stat.icon} alt={stat.label} width={40} height={40} /> 
                 
-                  <h3 className='text-[#0F4082] font-bold md:text-[40px] text-[20px] '>{stat.value}</h3>
-                  <p className='text-[#4B5564]'>{stat.label}</p>
+                  <h3 className='text-[#0F4082] text-center font-bold md:text-[40px] text-[20px] '>{stat.value}</h3>
+                  <p className='text-[#4B5564] text-center'>{stat.label}</p>
                 
               </div>
             ))
