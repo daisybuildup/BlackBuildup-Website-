@@ -2,7 +2,7 @@
 import React from 'react'
 import TypewriterText from '../components/TypewriterText'
 import Partners from './component/Partners'
-import EventsClient from './component/EventsClient'
+import Events from './component/Events'
 const page = () => {
   return (
     <div>
@@ -27,7 +27,7 @@ const page = () => {
 <p className="pt-4 pb-11 text-[#4B5564] text-center  xl:w-[35%]">
         Evidence of our commitment to building a thriving Black business ecosystem 
       </p>
-<EventsClient/>
+<Events/>
   </section>
     </div>
   )

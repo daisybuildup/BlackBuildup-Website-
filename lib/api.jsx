@@ -140,3 +140,23 @@ export async function getFeaturedProject() {
     })) || []
   }));
 }
+
+
+export async function getEvents() {
+    const res = await client.getEntries({
+    content_type: "events",
+  });
+  
+
+  return res.items.map((item) => ({
+    id: item.sys.id,
+    title: item.fields.title,
+    date: item.fields.date,
+   image: item.fields.image?.fields?.file?.url
+  ? `https:${item.fields.image.fields.file.url}`
+  : null,
+    link: item.fields.link,
+    description: item.fields.description,
+     
+  }));
+}

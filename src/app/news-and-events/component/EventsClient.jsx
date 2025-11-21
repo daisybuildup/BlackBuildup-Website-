@@ -1,13 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
 
-const EventsClient = () => {
-    const events = [
+const EventsClient = ({events}) => {
+
+    {/*const events = [
     { title: "African Canadian Business Summit 2024", date: "March 2024", image:'/eventone.jpg', link:'/', description: "A landmark gathering of Black entrepreneurs, business leaders, and ecosystem partners focused on advancing economic opportunities and building sustainable businesses across British Columbia." },
     { title: "African Canadian Business Summit 2024", date: "March 2024", image:'/eventtwo.jpg', link:'/', description: "BC’s only Black-led Women Business Exhibit showcasing innovative entrepreneurs, fostering connections, and celebrating the achievements of Black women in business" },
     { title: "FACE Coalition Workshops", date: "Ongoing 2024-2025", image:'/eventthree.jpg', link:'/', description: "Interactive workshop series providing practical skills, mentorship, and resources to help Black entrepreneurs navigate business challenges and accelerate growth." }, 
     { title: "SBCCI Grant Writing Session", date: "Quarterly 2024", image:'/eventfour.jpg', link:'/', description: "Comprehensive grant writing workshop equipping entrepreneurs with the knowledge and tools to successfully secure funding for their business and initiatives." },  
-    ]
+    ]*/}
+
+    
   return (
     < >
     <div className="w-full grid md:grid-cols-2 gap-6">
