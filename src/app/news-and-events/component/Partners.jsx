@@ -15,7 +15,7 @@ const Partners = () => {
     {
       category: "Community & Cultural Partners",
       items: [
-        { logo: "/bwbn.jpg", name: "Black Women Business Network" }
+        { logo: "/lerelais.jpg", name: "Relais Francophone" }
       ]
     },
     {

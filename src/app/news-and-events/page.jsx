@@ -2,6 +2,7 @@
 import React from 'react'
 import TypewriterText from '../components/TypewriterText'
 import Partners from './component/Partners'
+import EventsClient from './component/EventsClient'
 const page = () => {
   return (
     <div>
@@ -20,6 +21,13 @@ const page = () => {
 <h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[30px]'>Our Key Partners</h1>
 
 <Partners/>
+  </section>
+      <section className='bg-white w-full flex flex-col justify-center items-center py-10 px-5 md:px-16'>
+<h1 className='text-[#0F4082] font-bold lg:text-[40px] text-[30px]'>Featured Past Events</h1>
+<p className="pt-4 pb-11 text-[#4B5564] text-center  xl:w-[35%]">
+        Evidence of our commitment to building a thriving Black business ecosystem 
+      </p>
+<EventsClient/>
   </section>
     </div>
   )

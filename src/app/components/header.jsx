@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className="font-mont max-w-[1530px] fixed z-1000 bg-[#F5F5F5] w-full text-[#3360A0] flex py-5 justify-between items-center xl:px-15 px-5">
       <Link href="/">
-         <Image src='/blackbuildup.png' alt='logo'width={144} height={74} className='md:w-[144px] md:h-[64px] w-[120px] h-[60px] object-cover'/>
+         <Image src='/bbulogo.png' alt='logo'width={144} height={74} className='md:w-[144px] md:h-[64px] w-[120px] h-[60px] object-cover'/>
       </Link>
 
       <nav className="lg:block hidden">

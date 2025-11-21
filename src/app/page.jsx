@@ -48,7 +48,7 @@ const impacts = [
       </div>
       </div>
       <div className='w-auto flex justify-center items-center'>
-      <Image src='/cclchero.jpg' alt='community img' width={570} height={565} className=''/>
+      <Image src='/homebg.jpg' alt='community img' width={579} height={565} className=' xl:w-[579px] xl:h-[550px] rounded-xl'/>
       </div>
      </section>
      <section className=' md:px-11 px-5  py-[72px] mt-[72px] w-full h-auto bg-[#0F4082] text-white flex flex-col justify-center items-center'>
