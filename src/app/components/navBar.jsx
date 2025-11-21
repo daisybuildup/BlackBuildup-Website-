@@ -15,7 +15,7 @@ const [isSignOpen, setIsSignOpen] = useState(false);
 
       <div className="  w-[70%] flex justify-between items-left flex-col  min-h-screen bg-[#1e1c1c] z-1000">
         <div className="flex items-center justify-between py-5 px-[30px]">
-             <Link href="/" onClick={handleToggleOff} >{/*<Image src="/cclclogo.svg" alt="cclc logo" width={120} height={60} className=""  />*/}    <Image src='/bbulogo.png' alt='logo'width={144} height={74} className='md:w-[144px] md:h-[64px] w-[120px] h-[60px] object-cover'/></Link>
+             <Link href="/" onClick={handleToggleOff} >{/*<Image src="/cclclogo.svg" alt="cclc logo" width={120} height={60} className=""  />*/}    <Image src='/bbulogo.png' alt='logo'width={144} height={74} className='md:w-[154px] md:h-[74px] w-[125px] h-[65px] object-cover bg-white'/></Link>
           <div className="flex items-center justify-center w-8 h-8 rounded-full bg-white/20">
   <FaTimes className="text-[#ffff]" size={20} onClick={handleToggleOff}  />
 </div>
