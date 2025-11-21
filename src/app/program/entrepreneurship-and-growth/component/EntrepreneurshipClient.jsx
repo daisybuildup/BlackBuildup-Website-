@@ -19,7 +19,7 @@ const Modal = ({ modal, setModal }) => {
     //  Encode data for mailto link
     const subject = encodeURIComponent("New Inquiry from Website");
     const body = encodeURIComponent(
-      `\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}\n\n from CCLC website`
+      `\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}\n\n from Blackbuildup website`
     );
 
     // ailto link (opens Gmail or default email app)

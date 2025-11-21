@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Achievement from '../components/Achievement'
 import Leadership from '../components/Leadership'
 import TypewriterText from '../components/TypewriterText'
+import ButtonDiv from './component/ButtonDiv'
 //import  Review  from '../components/review'
 
 
@@ -129,7 +130,17 @@ Our Leadership</p>
   ))}
 </div>
 <p className='text-[#4B5564] pt-12 text-center'>Interested in partnering with us? Let’s create impact together.</p>
-<button className='py-3 px-3.5 bg-[#0F4082] rounded-xl font-medium mt-6'>Become a Partner</button>
+      <ButtonDiv  
+          involve={{
+                        programs: [
+             'Select partnership type',
+             'Academic Institution',
+             'Corporate Partner',
+             'Nonprofit Organization',
+             'Government Agency',
+             'Community Organisation',
+             'Other'
+            ]}}/>
   </section>
 
    {/* <section className='bg-white w-full flex flex-col justify-center items-center pt-18 pb-13  px-5 md:px-16'>

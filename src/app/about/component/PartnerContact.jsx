@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-const Cohort = ({setIsOpenProp,involve}) => {
+const PartnerContact = ({setIsOpenProp, involve}) => {
 
   const [showToast, setShowToast] = useState(false);
   
@@ -11,20 +11,21 @@ const Cohort = ({setIsOpenProp,involve}) => {
   
       
       const formData = new FormData(e.target);
-      const firstname = formData.get("firstname");
-       const lastname = formData.get("lastname");
-      const email = formData.get("email");
+      const organisationname = formData.get("organisationname");
+      const fullname = formData.get("fullname");
+       const email = formData.get("email");
       const phone = formData.get("phone");
       const program = formData.get("program")
       const message = formData.get("message");
+     
   
       //  Encode data for mailto link
       const subject = encodeURIComponent("New Inquiry from Website");
       const body = encodeURIComponent(
-        `\nFirstname: ${firstname}\nLastname: ${lastname}\nEmail: ${email}\nPhone: ${phone}\nProgram: ${program}\nMessage: ${message}\n\n from Blackbuildup website`
+        `\nOrganisation-name: ${organisationname}\nfullname:${fullname}\nEmail: ${email}\nPhone: ${phone}\nProgram: ${program}\nMessage: ${message}\n from Blackbuildup website`
       );
   
-      // ailto link (opens Gmail or default email app)
+      // mailto link (opens Gmail or default email app)
       window.location.href = `mailto:info@blackbuildup.com?subject=${subject}&body=${body}`;
     
   
@@ -50,59 +51,60 @@ const Cohort = ({setIsOpenProp,involve}) => {
         onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
       >
         <h1 className="text-[#0F4082] text-left font-bold text-[24px] sm:text-[28px] md:text-[32px]">
-          {involve.header}
+       Partnership Application
         </h1>
-        <p className="pt-4 sm:pt-6 text-sm text-left w-[80%] sm:text-base">{involve.text}</p>
+        <p className=" pb-6  text-sm text-left w-[80%] sm:text-base">Fill out the form below to express your interest in partnering with us. We’ll review your application and get to you within 5 business days.</p>
+       
               <form className="space-y-4"   onSubmit={handleSubmit}>
           
-     <div className='flex flex-col md:flex-row justify-center mt-6 items-center gap-6'>
-          <div className=' md:w-[50%] w-full'>
-            <label htmlFor='firstname' className="block mb-1 text-left font-medium">First Name*</label>
+     <div>
+            <label htmlFor='organisationname' className="block mb-1 text-left font-medium">Organisation Name*</label>
             <input
               type="text"
-              name="firstname"
-              placeholder='Enter your first name'
+              name="organisationname"
               required
               className="w-full border border-[#D9D9D9] rounded-lg p-3"
+              placeholder='Enter your organisation name'
             />
           </div>
-
-          <div className=' md:w-[50%] w-full'>
-            <label htmlFor='lastName' className="block mb-1 text-left font-medium">Last Name*</label>
-            <input
-              type="text"
-              name="lastname"
-              placeholder='Enter your last name'
-              required
-              className="w-full border border-[#D9D9D9] rounded-lg p-3"
-            />
-          </div>
-       </div>
 
 
           <div>
-            <label htmlFor='email' className="block mb-1 text-left font-medium">Email*</label>
+            <label htmlFor='fullname' className="block mb-1 text-left font-medium">Contact Name*</label>
+            <input
+              type="text"
+              name="fullname"
+              required
+              className="w-full border border-[#D9D9D9] rounded-lg p-3"
+
+              placeholder='Enter your full name'
+            />
+          </div>
+
+
+          <div>
+            <label htmlFor='email' className="block mb-1 text-left font-medium">Email Address*</label>
             <input
               type="email"
               name="email"
-              placeholder='your.email@example.com'
               required
               className="w-full border border-[#D9D9D9] rounded-lg p-3"
+              placeholder='your@email.com'
             />
           </div>
+          
 
           <div>
-            <label htmlFor='phone' className="block mb-1 text-left font-medium">Phone Number (optional)</label>
+            <label htmlFor='phone' className="block mb-1 text-left font-medium">Phone Number</label>
             <input
               type="tel"
               name="phone"
-              placeholder='(555) 123-4567'
               className="w-full border border-[#D9D9D9] rounded-lg p-3"
+              placeholder='(555) 123-4567'
             />
           </div>
-
-          <div>
-            <label htmlFor='program' className="block mb-1 text-left font-medium">How would you like to get involved?*</label>
+            <div>
+          <label htmlFor='program' className="block mb-1 text-left font-medium">Partnership Type/</label>
             <select
               name="program"
               required
@@ -114,18 +116,19 @@ const Cohort = ({setIsOpenProp,involve}) => {
                 ))
              }
             </select>
-          </div>
-
-          <div>
-            <label htmlFor='message' className="block mb-1 text-left font-medium">Tell us more*</label>
+              </div>
+           <div>
+            <label htmlFor='message' className="block mb-1 text-left font-medium">Tell Us about your partnership interests*</label>
             <textarea 
               name="message"
-              placeholder={involve.textarea}
+              placeholder= "Describe how you'd like to collaborate with us, what resources you can offer, and your organisation goals..."
               rows="3"
               required
               className="w-full border border-[#D9D9D9] rounded-lg p-3"
             ></textarea>
           </div>
+
+         
                 
                {/*  Toast notification */}
             {showToast && (
@@ -140,7 +143,7 @@ const Cohort = ({setIsOpenProp,involve}) => {
             className="w-[80%] bg-[#0F4082] text-white py-3 rounded-2xl hover:bg-[#1051a6] cursor-pointer transition"
           
           >
-            Submit
+            Send Application
           </button>
           <button type='button' className='border border-[#0F4082] text-[#0F4082] rounded-2xl p-3 flex-1 cursor-pointer  font-medium' onClick={()=>setIsOpenProp(false)}>Cancel</button>
           </div>
@@ -152,4 +155,4 @@ const Cohort = ({setIsOpenProp,involve}) => {
   )
 }
 
-export default Cohort
+export default PartnerContact

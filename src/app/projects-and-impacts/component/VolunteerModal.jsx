@@ -21,7 +21,7 @@ const VolunteerModal = ({setIsOpenProp}) => {
       //  Encode data for mailto link
       const subject = encodeURIComponent("New Inquiry from Website");
       const body = encodeURIComponent(
-        `\nFullname: ${fullname}\nEmail: ${email}\nPhone: ${phone}\nArea Of Interest: ${AreaOfInterest} \nAvailability: ${Availability}\nRelevant Experience: ${RelevantExperience}\n from CCLC website`
+        `\nFullname: ${fullname}\nEmail: ${email}\nPhone: ${phone}\nArea Of Interest: ${AreaOfInterest} \nAvailability: ${Availability}\nRelevant Experience: ${RelevantExperience}\n from Blackbuildup website`
       );
   
       // mailto link (opens Gmail or default email app)
