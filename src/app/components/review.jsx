@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { getReviews } from '../../../lib/api';
+export const revalidate = 60;
 
 const Review = async () => {
   const Reviews = await getReviews()
