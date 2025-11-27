@@ -1,10 +1,10 @@
 //import { Component } from "react";
 import {client} from "./contentful";
 
-export const revalidate = 60; // revalidate every 60 seconds
+
 
 export async function getReviews() {
-  const res = await client.getEntries({ content_type: "review" });
+  const res = await client.getEntries({ content_type: "review" }, { cache: "no-store" });
 
   return res.items.map((item) => ({
     id: item.sys.id,
@@ -21,7 +21,7 @@ export async function getTeams() {
       console.log("Client:", client); // should not be undefined
  const res = await client.getEntries({
     content_type: "team",
-  });
+  }, { cache: "no-store" });
   
 
   return res.items.map((item) => ({
@@ -45,7 +45,7 @@ export async function getTeams() {
 export async function getEcosystem() {
     const res = await client.getEntries({
     content_type: "ecosystem",
-  });
+  }, { cache: "no-store" });
   
 
   return res.items.map((item) => ({
@@ -64,7 +64,7 @@ export async function getEcosystem() {
 export async function getEntrepreneurship() {
     const res = await client.getEntries({
     content_type: "entrepreneurship",
-  });
+  }, { cache: "no-store" });
   
 
   return res.items.map((item) => ({
@@ -83,7 +83,7 @@ export async function getEntrepreneurship() {
 export async function getCommunity() {
     const res = await client.getEntries({
     content_type: "community",
-  });
+  }, { cache: "no-store" });
   
 
   return res.items.map((item) => ({
@@ -102,7 +102,7 @@ export async function getCommunity() {
 export async function getProject() {
     const res = await client.getEntries({
     content_type: "projects",
-  });
+  }, { cache: "no-store" });
   
 
   return res.items.map((item) => ({
@@ -121,7 +121,7 @@ export async function getFeaturedProject() {
   const res = await client.getEntries({
     content_type: "featuredproject",
     include: 2
-  });
+  }, { cache: "no-store" });
 
     return res.items.map((item) => ( {
     tag: item.fields.tag,
@@ -145,7 +145,7 @@ export async function getFeaturedProject() {
 export async function getEvents() {
     const res = await client.getEntries({
     content_type: "events",
-  });
+  }, { cache: "no-store" });
   
 
   return res.items.map((item) => ({
