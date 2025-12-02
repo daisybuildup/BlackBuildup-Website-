@@ -52,9 +52,9 @@ const Header = () => {
           >
             Sign In
           </button>
-          <button className="text-white py-3 px-3 rounded-2xl hover:bg-[#a57d45] bg-[#AD8E63]">
+          {/*<button className="text-white py-3 px-3 rounded-2xl hover:bg-[#a57d45] bg-[#AD8E63]">
             Donate
-          </button>
+          </button>*/}
         </div>
         <Image
           src="/menu.svg"
