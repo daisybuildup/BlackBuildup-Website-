@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const FeaturedProjectClient = ({featuredproject}) => {
  
@@ -37,7 +38,14 @@ const PModalCard = ({ modal, setIsOpenProp }) => {
        
                  
         <h2 className="text-[#0F4082] font-bold pt-6 text-[24px]">Impact</h2>
-         <p className='mt-3'>{modal.impact}</p>     
+         <p className='mt-3'>{modal.impact}</p>  
+         {
+          modal.link ? (
+            <Link href={modal.link} target="_blank" rel="noopener noreferrer" className="text-white rounded-2xl w-full cursor-pointer text-center py-3 bg-[#0F4082] mt-4 inline-block">
+                 View Project
+            </Link>
+          ) : null
+         }   
       </div>
     </div>
   );

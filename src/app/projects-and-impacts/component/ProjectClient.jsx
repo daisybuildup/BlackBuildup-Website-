@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const ProjectClient = ({projects}) => {
  
@@ -35,7 +36,14 @@ const PModalCard = ({ modal, setIsOpenProp }) => {
           <ul key={idx} className="list-disc mt-3 marker:text-[#82510F] flex flex-col gap-3 pl-5">
             <li>{detail}</li>
           </ul>
-        ))}              
+        ))}  
+        {
+          modal.link ? (
+            <Link href={modal.link} target="_blank" rel="noopener noreferrer" className="text-white rounded-2xl w-full cursor-pointer text-center py-3 bg-[#0F4082] mt-4 inline-block">
+                 View Project
+            </Link>
+          ) : null
+         }             
       </div>
     </div>
   );

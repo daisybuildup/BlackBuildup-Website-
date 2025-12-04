@@ -110,6 +110,7 @@ export async function getProject() {
     title: item.fields.title,
     category: item.fields.category,
     timeline: item.fields.timeline,
+    link: item.fields.link,
     description: item.fields.description,
     impact: item.fields.impact || [],
      
@@ -131,6 +132,7 @@ export async function getFeaturedProject() {
     timeline: item.fields.timeline,
     highlight: item.fields.highlight,
     impact: item.fields.impact,
+    link: item.fields.link,
     stats: item.fields.stats?.map(stat => ({
       icon: stat.fields.icon?.fields.file.url
         ? `https:${stat.fields.icon.fields.file.url}`
